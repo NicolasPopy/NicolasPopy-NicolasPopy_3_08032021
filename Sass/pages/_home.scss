@@ -1,7 +1,60 @@
+@import "../utils/variables";
+
+html, body{
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#home_recherche{
+    width: 100%;
+    margin:0;
+    height:3em;
+
+    background-color:rgb(199, 199, 199);
+    i{
+        display:inline;
+    }
+    p{
+        display:inline;
+    }
+}
+
+#rechercheville{
+    width: 100%;
+    border:0;
+
+    margin:0;
+}
+
+
+
+#home_explore{
+    text-align:center;
+     font-family: Shrikhand;
+    h1{
+        font-size: 2em;
+        font-family: Shrikhand;
+    }
+    p{
+        font-size:1.2em;
+    }
+}
+
+
+
+
 #home_restaurants{
     border:1px solid green;
 }
 
+
+#btn_explore{
+    background-color:$PrimaryColor;
+    border-radius: 50%;
+    font-size:1.2em;
+    padding:2%;
+}
 
 #restaurants{
     display:flex;

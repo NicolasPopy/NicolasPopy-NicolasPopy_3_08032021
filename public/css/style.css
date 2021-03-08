@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .restaurant {
   width: 100%;
   margin: 0;
@@ -15,8 +17,52 @@
   border: 1px solid purple;
 }
 
+html, body {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#home_recherche {
+  width: 100%;
+  margin: 0;
+  height: 3em;
+  background-color: #c7c7c7;
+}
+#home_recherche i {
+  display: inline;
+}
+#home_recherche p {
+  display: inline;
+}
+
+#rechercheville {
+  width: 100%;
+  border: 0;
+  margin: 0;
+}
+
+#home_explore {
+  text-align: center;
+  font-family: Shrikhand;
+}
+#home_explore h1 {
+  font-size: 2em;
+  font-family: Shrikhand;
+}
+#home_explore p {
+  font-size: 1.2em;
+}
+
 #home_restaurants {
   border: 1px solid green;
+}
+
+#btn_explore {
+  background-color: #9356DC;
+  border-radius: 50%;
+  font-size: 1.2em;
+  padding: 2%;
 }
 
 #restaurants {
