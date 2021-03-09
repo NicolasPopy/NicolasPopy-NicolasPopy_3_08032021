@@ -2,21 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-.restaurant {
-  width: 100%;
-  margin: 0;
-  border: 1px solid orange;
-}
-.restaurant figure {
-  width: 100%;
-  margin: 0 1em;
-  border: 1px solid red;
-}
-.restaurant figure img {
-  width: 100%;
-  border: 1px solid purple;
-}
-
 html, body {
   width: 100%;
   margin: 0;
@@ -27,42 +12,78 @@ html, body {
   width: 100%;
   margin: 0;
   height: 3em;
-  background-color: #c7c7c7;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAEAEA;
 }
 #home_recherche i {
+  border: 1px solid red;
   display: inline;
 }
 #home_recherche p {
+  border: 1px solid blue;
   display: inline;
 }
 
 #rechercheville {
-  width: 100%;
   border: 0;
   margin: 0;
 }
 
 #home_explore {
   text-align: center;
-  font-family: Shrikhand;
+  background-color: #F6F6F6;
+  font-family: Roboto;
 }
 #home_explore h1 {
   font-size: 2em;
-  font-family: Shrikhand;
 }
 #home_explore p {
   font-size: 1.2em;
 }
 
-#home_restaurants {
-  border: 1px solid green;
+#home_fonctionnement {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_fonctionnement {
+  display: grid;
+  grid-template-areas: "number icone text";
+  grid-template-rows: 100%;
+  grid-template-columns: 5% 5% auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5%;
+  width: 80%;
+  border-radius: 45px 45px 45px 45px;
+  background-color: #F6F6F6;
+  box-shadow: 0 5% 5% 0;
+}
+.btn_fonctionnement .fa-circle {
+  color: #9356DC;
+}
+.btn_fonctionnement .circle-text {
+  color: white;
 }
 
 #btn_explore {
-  background-color: #9356DC;
-  border-radius: 50%;
-  font-size: 1.2em;
-  padding: 2%;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 45px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+  border: none;
+  padding: 6% 8%;
+}
+
+#home_restaurants {
+  border: 1px solid green;
 }
 
 #restaurants {
@@ -72,6 +93,21 @@ html, body {
   align-items: center;
   width: 100%;
   border: 2px solid blue;
+}
+
+.restaurant {
+  width: 100%;
+  margin: 2% 2%;
+  border: 1px solid orange;
+}
+.restaurant figure {
+  width: 100%;
+  margin: 0;
+  border: 1px solid red;
+}
+.restaurant figure img {
+  width: 100%;
+  border: 1px solid purple;
 }
 
 /* *{outline:1px solid red;} */

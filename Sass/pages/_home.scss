@@ -10,18 +10,23 @@ html, body{
     width: 100%;
     margin:0;
     height:3em;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
 
-    background-color:rgb(199, 199, 199);
+    background-color:#EAEAEA;
     i{
+        border:1px solid red;
         display:inline;
     }
     p{
+        border :1px solid blue;
         display:inline;
     }
 }
 
-#rechercheville{
-    width: 100%;
+#rechercheville{    
     border:0;
 
     margin:0;
@@ -31,10 +36,10 @@ html, body{
 
 #home_explore{
     text-align:center;
-     font-family: Shrikhand;
+    background-color: #F6F6F6;
+     font-family: Roboto;
     h1{
-        font-size: 2em;
-        font-family: Shrikhand;
+        font-size: 2em;     
     }
     p{
         font-size:1.2em;
@@ -42,18 +47,57 @@ html, body{
 }
 
 
+//################################
+// FONCTIONNEMENT
+//################################
+
+#home_fonctionnement{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.btn_fonctionnement{
+    display:grid;
+    grid-template-areas: "number icone text";
+    grid-template-rows: 100%;
+    grid-template-columns: 5% 5% auto;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 5%;
+    width:80%;
+    border-radius: 45px 45px 45px 45px;
+    background-color: #F6F6F6;
+    box-shadow: 0 5% 5% 0;
+    .fa-circle{
+        color:$PrimaryColor;
+    }
+    .circle-text{
+        color:white;
+    }
+}
+
+
+
+
+#btn_explore{
+    background-image:linear-gradient($SecondaryColor, $PrimaryColor);
+    border-radius: 45px;
+    font-size:1.1em;
+    font-weight: bold;
+    color:white;
+    border:none;
+    padding:6% 8%;
+}
+
 
 
 #home_restaurants{
     border:1px solid green;
-}
 
-
-#btn_explore{
-    background-color:$PrimaryColor;
-    border-radius: 50%;
-    font-size:1.2em;
-    padding:2%;
 }
 
 #restaurants{
@@ -63,5 +107,23 @@ html, body{
     align-items:center;
     width:100%;
     border:2px solid blue;
+}
+
+.restaurant{
+    width:100%;
+    margin:2% 2%;
+    border:1px solid orange;
+        figure{
+            width:100%;
+            margin:0 ;
+           
+            border:1px solid red;
+            img{
+                width:100%;
+                border:1px solid purple;
+            }
+        }
+
+    
 }
 
