@@ -5,6 +5,18 @@ html, body, main{
     margin: 0 ;
     padding:0 ;
     box-sizing: border-box;
+    font-family: roboto;
+}
+
+
+#headeromf{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    #header_logoomf{
+        align-items: center;
+    }
 }
 
 #home_recherche{
@@ -16,7 +28,7 @@ html, body, main{
     justify-content:center;
     align-items: center;
 
-    background-color:#EAEAEA;
+    background-color:$FifthColor;
     i{
         display:inline;
     }
@@ -35,7 +47,7 @@ html, body, main{
 
 #home_explore{
     text-align:center;
-    background-color: #F6F6F6;
+    background-color: $FourthColor;
      font-family: Roboto;
     h1{
         font-size: 2em;     
@@ -69,6 +81,9 @@ html, body, main{
     flex-direction:column;
     align-items:center;
     justify-content:center;
+    h1{
+        align-self: start;
+    }
 }
 
 
@@ -79,29 +94,35 @@ html, body, main{
     grid-template-columns: 1fr 1fr 10fr;
     justify-content: start;
     align-items:center;
-    margin-bottom: 5%;
+    margin:0 0 5% 0;
     width:80%;
     height:4em;
     border-radius: 15px 15px 15px 15px;
-    background-color: #F6F6F6;
-    box-shadow: 0 5% 5% 0;
+    box-shadow: 6px 6px 2px 0px $FifthColor;
+    background-color:$FourthColor;
+
+
+    .numero{
+        margin-left:-20px;
+    }
     .fa-circle{
         color:$PrimaryColor;
-        border:1px solid blue;
         grid-area: number;
-    }
-    .icone_fonctionnement{
-        border:1px solid red;
-        grid-area: icone;
+        margin:0px;
+        vertical-align: middle;
     }
     .circle-text{
         color:white;
         grid-area: number;
-       
+        margin:0px;
+        font-size: 0.8em;
     }
+    .icone_fonctionnement{
+        grid-area: icone;
+    }
+
     p{
         grid-area: text;
-        border:1px solid green;
     }
 }
 
@@ -117,7 +138,11 @@ html, body, main{
     align-items:center;
     width:100%;
     padding:0;
-    background-color: gray;// #F6F6F6;
+    background-color: $FourthColor;
+
+    h1{
+        align-self: start;
+    }
 }
 
 .restaurant{
@@ -172,5 +197,19 @@ html, body, main{
 footer{
     background-color:353535;
     color:white;
+    padding:4% 6%;
 }
 
+
+#footer_menu{
+    margin:0;
+    padding:0;
+    ul{
+        list-style-type: none; 
+        margin:0;
+        padding: 0;
+        li{
+            margin:0;
+        }
+    }
+}

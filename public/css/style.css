@@ -7,6 +7,17 @@ html, body, main {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: roboto;
+}
+
+#headeromf {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#headeromf #header_logoomf {
+  align-items: center;
 }
 
 #home_recherche {
@@ -17,7 +28,7 @@ html, body, main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #EAEAEA;
+  background-color: #3f3f3f;
 }
 #home_recherche i {
   display: inline;
@@ -33,7 +44,7 @@ html, body, main {
 
 #home_explore {
   text-align: center;
-  background-color: #F6F6F6;
+  background-color: #cecece;
   font-family: Roboto;
 }
 #home_explore h1 {
@@ -61,6 +72,9 @@ html, body, main {
   align-items: center;
   justify-content: center;
 }
+#home_fonctionnement h1 {
+  align-self: start;
+}
 
 .btn_fonctionnement {
   display: grid;
@@ -69,29 +83,33 @@ html, body, main {
   grid-template-columns: 1fr 1fr 10fr;
   justify-content: start;
   align-items: center;
-  margin-bottom: 5%;
+  margin: 0 0 5% 0;
   width: 80%;
   height: 4em;
   border-radius: 15px 15px 15px 15px;
-  background-color: #F6F6F6;
-  box-shadow: 0 5% 5% 0;
+  box-shadow: 6px 6px 2px 0px #3f3f3f;
+  background-color: #cecece;
+}
+.btn_fonctionnement .numero {
+  margin-left: -20px;
 }
 .btn_fonctionnement .fa-circle {
   color: #9356DC;
-  border: 1px solid blue;
   grid-area: number;
-}
-.btn_fonctionnement .icone_fonctionnement {
-  border: 1px solid red;
-  grid-area: icone;
+  margin: 0px;
+  vertical-align: middle;
 }
 .btn_fonctionnement .circle-text {
   color: white;
   grid-area: number;
+  margin: 0px;
+  font-size: 0.8em;
+}
+.btn_fonctionnement .icone_fonctionnement {
+  grid-area: icone;
 }
 .btn_fonctionnement p {
   grid-area: text;
-  border: 1px solid green;
 }
 
 #home_restaurants {
@@ -101,7 +119,10 @@ html, body, main {
   align-items: center;
   width: 100%;
   padding: 0;
-  background-color: gray;
+  background-color: #cecece;
+}
+#home_restaurants h1 {
+  align-self: start;
 }
 
 .restaurant {
@@ -151,6 +172,20 @@ html, body, main {
 footer {
   background-color: 353535;
   color: white;
+  padding: 4% 6%;
+}
+
+#footer_menu {
+  margin: 0;
+  padding: 0;
+}
+#footer_menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#footer_menu ul li {
+  margin: 0;
 }
 
 /* *{outline:1px solid red;} */
