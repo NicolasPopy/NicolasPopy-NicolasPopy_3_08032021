@@ -2,9 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-html, body {
+html, body, main {
   width: 100%;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -19,11 +20,9 @@ html, body {
   background-color: #EAEAEA;
 }
 #home_recherche i {
-  border: 1px solid red;
   display: inline;
 }
 #home_recherche p {
-  border: 1px solid blue;
   display: inline;
 }
 
@@ -44,6 +43,17 @@ html, body {
   font-size: 1.2em;
 }
 
+#btn_explore {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 45px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+  border: none;
+  padding: 6% 8%;
+  margin-bottom: 5%;
+}
+
 #home_fonctionnement {
   width: 100%;
   display: flex;
@@ -56,58 +66,91 @@ html, body {
   display: grid;
   grid-template-areas: "number icone text";
   grid-template-rows: 100%;
-  grid-template-columns: 5% 5% auto;
-  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 10fr;
+  justify-content: start;
   align-items: center;
   margin-bottom: 5%;
   width: 80%;
-  border-radius: 45px 45px 45px 45px;
+  height: 4em;
+  border-radius: 15px 15px 15px 15px;
   background-color: #F6F6F6;
   box-shadow: 0 5% 5% 0;
 }
 .btn_fonctionnement .fa-circle {
   color: #9356DC;
+  border: 1px solid blue;
+  grid-area: number;
+}
+.btn_fonctionnement .icone_fonctionnement {
+  border: 1px solid red;
+  grid-area: icone;
 }
 .btn_fonctionnement .circle-text {
   color: white;
+  grid-area: number;
 }
-
-#btn_explore {
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 45px;
-  font-size: 1.1em;
-  font-weight: bold;
-  color: white;
-  border: none;
-  padding: 6% 8%;
-}
-
-#home_restaurants {
+.btn_fonctionnement p {
+  grid-area: text;
   border: 1px solid green;
 }
 
-#restaurants {
+#home_restaurants {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  border: 2px solid blue;
+  padding: 0;
+  background-color: gray;
 }
 
 .restaurant {
-  width: 100%;
-  margin: 2% 2%;
-  border: 1px solid orange;
+  width: 90%;
+  margin-bottom: 5%;
 }
 .restaurant figure {
   width: 100%;
+  height: 55vw;
   margin: 0;
-  border: 1px solid red;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 5% 5% 0 0;
 }
 .restaurant figure img {
   width: 100%;
-  border: 1px solid purple;
+  height: 40vw;
+  border-radius: 25px 25px 0 0;
+  object-fit: cover;
+}
+.restaurant figure figcaption {
+  padding: 1% 0 0 5%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "titre coeur" "soustitre coeur";
+  justify-items: start;
+  align-items: center;
+}
+.restaurant figure figcaption h3 {
+  margin: 0;
+  padding: 0;
+  grid-area: titre;
+}
+.restaurant figure figcaption p {
+  grid-area: soustitre;
+  margin: 0;
+  padding: 0;
+}
+.restaurant figure figcaption i {
+  grid-area: coeur;
+  justify-self: center;
+}
+
+footer {
+  background-color: 353535;
+  color: white;
 }
 
 /* *{outline:1px solid red;} */
