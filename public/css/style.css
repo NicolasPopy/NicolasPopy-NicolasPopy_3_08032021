@@ -57,11 +57,11 @@ html, body, main {
 #btn_explore {
   background-image: linear-gradient(#FF79DA, #9356DC);
   border-radius: 45px;
-  font-size: 1.1em;
+  font-size: 1.6em;
   font-weight: bold;
   color: white;
   border: none;
-  padding: 6% 8%;
+  padding: 4% 6%;
   margin-bottom: 5%;
 }
 
@@ -74,6 +74,7 @@ html, body, main {
 }
 #home_fonctionnement h1 {
   align-self: start;
+  padding-left: 20px;
 }
 
 .btn_fonctionnement {
@@ -85,10 +86,11 @@ html, body, main {
   align-items: center;
   margin: 0 0 5% 0;
   width: 80%;
-  height: 4em;
+  height: 20vw;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 6px 6px 2px 0px #3f3f3f;
   background-color: #cecece;
+  font-size: 1vw;
 }
 .btn_fonctionnement .numero {
   margin-left: -20px;
@@ -98,18 +100,21 @@ html, body, main {
   grid-area: number;
   margin: 0px;
   vertical-align: middle;
+  font-size: 6em;
 }
 .btn_fonctionnement .circle-text {
   color: white;
   grid-area: number;
   margin: 0px;
-  font-size: 0.8em;
+  font-size: 5em;
 }
 .btn_fonctionnement .icone_fonctionnement {
   grid-area: icone;
+  font-size: 5em;
 }
 .btn_fonctionnement p {
   grid-area: text;
+  font-size: 5em;
 }
 
 #home_restaurants {
@@ -123,6 +128,7 @@ html, body, main {
 }
 #home_restaurants h1 {
   align-self: start;
+  padding-left: 20px;
 }
 
 .restaurant {
@@ -167,6 +173,7 @@ html, body, main {
 .restaurant figure figcaption i {
   grid-area: coeur;
   justify-self: center;
+  font-size: 1.6em;
 }
 
 footer {
