@@ -1,10 +1,16 @@
 #btn_gradient{
     background-image:linear-gradient($SecondaryColor, $PrimaryColor);
     border-radius: 45px;
-    font-size:1.6em;
+    font-size:1em;
     font-weight: bold;
     color:white;
     border:none;
     padding:4% 6%;
 
+    &--center{
+        display:flex;
+        justify-content:center;
+    }
+
 }
+

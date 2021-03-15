@@ -48,23 +48,25 @@ html, body, main {
   text-align: center;
   background-color: #cecece;
   font-family: Roboto;
+  padding-bottom: 10%;
 }
 #home_explore h1 {
-  font-size: 2em;
+  font-size: 1.5em;
+  padding: 0 5%;
 }
 #home_explore p {
   font-size: 1.2em;
 }
 
 #btn_explore {
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 45px;
-  font-size: 1.6em;
-  font-weight: bold;
-  color: white;
-  border: none;
-  padding: 4% 6%;
-  margin-bottom: 5%;
+  /*     background-image:linear-gradient($SecondaryColor, $PrimaryColor);
+      border-radius: 45px;
+      font-size:1.6em;
+      font-weight: bold;
+      color:white;
+      border:none;
+      padding:4% 6%;
+      margin-bottom: 15%; */
 }
 
 #home_fonctionnement {
@@ -95,20 +97,17 @@ html, body, main {
   font-size: 1vw;
 }
 .btn_fonctionnement .numero {
-  margin-left: -20px;
+  transform: translateX(-15px);
+  font-size: 3.5em;
 }
 .btn_fonctionnement .fa-circle {
   color: #9356DC;
   grid-area: number;
-  margin: 0px;
   vertical-align: middle;
-  font-size: 6em;
 }
 .btn_fonctionnement .circle-text {
   color: white;
   grid-area: number;
-  margin: 0px;
-  font-size: 5em;
 }
 .btn_fonctionnement .icone_fonctionnement {
   grid-area: icone;
@@ -136,6 +135,9 @@ html, body, main {
 .restaurant {
   width: 90%;
   margin-bottom: 5%;
+}
+.restaurant a, .restaurant a:hover, .restaurant a:visited, .restaurant a:link, .restaurant a:active {
+  text-decoration: none;
 }
 .restaurant figure {
   width: 100%;
@@ -213,8 +215,6 @@ html, body, main {
   width: 100%;
 }
 
-/* *{outline:1px solid blue;}
- */
 #menu {
   width: 100%;
   transform: translateY(-60px);
@@ -224,10 +224,38 @@ html, body, main {
   margin: 0;
   background-color: #cecece;
 }
+#menu h4 {
+  margin: 0;
+  font-size: 1.2em;
+}
 
-/* .Entree, .Plat, .Dessert{
+#menu_titre {
+  display: grid;
+  grid-template-areas: "titre coeur";
+  grid-template-rows: 100%;
+  grid-template-columns: 6fr 1fr;
+  align-items: center;
+}
+#menu_titre h1 {
+  font-family: Shrikhand;
+  grid-area: titre;
+}
+#menu_titre .fa-heart-o {
+  font-size: 1.9em;
+  grid-area: coeur;
+}
 
-} */
+.Entree, .Plat, .Dessert {
+  margin-bottom: 3.5em;
+}
+
+.barreH {
+  height: 2%;
+  width: 3em;
+  margin-top: 0.5em;
+  border-top: 4px solid #99E2D0;
+}
+
 .choix {
   display: grid;
   grid-template-areas: "titre  vide" "soustitre prix";
@@ -265,21 +293,36 @@ html, body, main {
 #btn_gradient {
   background-image: linear-gradient(#FF79DA, #9356DC);
   border-radius: 45px;
-  font-size: 1.6em;
+  font-size: 1em;
   font-weight: bold;
   color: white;
   border: none;
   padding: 4% 6%;
 }
-
-/* *{outline:1px solid red;} */
-#header {
-  width: 100%;
+#btn_gradient--center {
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
-#header #header_logoomf {
+
+#headeromf {
+  box-sizing: border-box;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "fleche logo vide";
+  grid-template-rows: 100%;
+  grid-template-columns: 3fr 4fr 3fr;
+  justify-content: start;
+}
+#headeromf .fa-arrow-left {
+  grid-area: fleche;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0 0 0 20%;
+}
+#headeromf #header_logoomf {
+  grid-area: logo;
+  justify-self: center;
+  margin: 0;
   padding: 1em 0;
 }
 
