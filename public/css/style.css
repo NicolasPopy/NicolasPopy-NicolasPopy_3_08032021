@@ -137,7 +137,7 @@ html, body, main {
   margin: 0;
   background-color: white;
   border-radius: 25px;
-  box-shadow: 5% 5% 0 0;
+  box-shadow: 0.5em 0.5em #3f3f3f;
 }
 .restaurant figure img {
   width: 100%;
@@ -173,7 +173,7 @@ html, body, main {
 }
 
 footer {
-  background-color: 353535;
+  background-color: #3f3f3f;
   color: white;
   padding: 4% 6%;
 }
@@ -189,6 +189,11 @@ footer {
 }
 #footer_menu ul li {
   margin: 0;
+  text-decoration: none;
+}
+#footer_menu a, #footer_menu a:hover, #footer_menu a:visited, #footer_menu a:link, #footer_menu a:active {
+  text-decoration: none;
+  color: white;
 }
 
 html, body, main {
