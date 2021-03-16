@@ -6,6 +6,8 @@ html, body, main{
     padding:0 ;
     box-sizing: border-box;
     font-family: roboto;
+
+    font-size: 4vw;
 }
 
 
@@ -28,6 +30,8 @@ html, body, main{
     justify-content:center;
     align-items: center;
 
+
+
     background-color:$FifthColor;
     i{
         display:inline;
@@ -48,8 +52,8 @@ html, body, main{
 #home_explore{
     text-align:center;
     background-color: $FourthColor;
-     font-family: Roboto;
-     padding-bottom: 10%;
+    font-family: Roboto;
+    padding-bottom: 10%;
      
     h1{
         font-size: 1.5em;    
@@ -58,18 +62,6 @@ html, body, main{
     p{
         font-size:1.2em;
     }
-}
-
-
-#btn_explore{
-/*     background-image:linear-gradient($SecondaryColor, $PrimaryColor);
-    border-radius: 45px;
-    font-size:1.6em;
-    font-weight: bold;
-    color:white;
-    border:none;
-    padding:4% 6%;
-    margin-bottom: 15%; */
 }
 
 
@@ -84,9 +76,12 @@ html, body, main{
     flex-direction:column;
     align-items:center;
     justify-content:center;
+
+   /*  font-size: 4vw; */
     h1{
         align-self: start;
         padding-left: 20px;
+        
     }
 }
 
@@ -109,7 +104,7 @@ html, body, main{
 
 
     .numero{
-        transform: translateX(-15px);
+        transform: translateX(-45%);
         font-size:3.5em
     }
     .fa-circle{

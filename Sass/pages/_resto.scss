@@ -23,7 +23,7 @@ html, body, main{
 {
     width:100%;
     transform: translateY(-60px);
-    border-radius: 45px 45px 0 0;
+    border-radius: 12vw 12vw 0 0;
     box-sizing: border-box;
     padding:6% 4% 8% 4%;
 
@@ -44,11 +44,12 @@ html, body, main{
     grid-template-columns:6fr 1fr;
 
     align-items: center;
-
+    font-size: 4vw;
 
     h1{
         font-family: Shrikhand;
         grid-area: titre;
+        font-size: 2.2em;
     }
 
     .fa-heart-o{
@@ -58,8 +59,8 @@ html, body, main{
 }
 
 .Entree, .Plat, .Dessert{
-margin-bottom: 3.5em;
-
+    margin-bottom: 3.5em;
+    font-size: 4vw;
 }
 .barreH{
     height:2%;

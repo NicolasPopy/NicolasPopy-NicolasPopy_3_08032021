@@ -1,21 +1,23 @@
 .choix{
 
     display:grid;
-    grid-template-areas: "titre  vide"
+    grid-template-areas: "titre  titre"
                         "soustitre prix";
     grid-template-rows: 1fr 1fr ;
-    grid-template-columns: 9fr 1fr ;
-    grid-gap:8%;
+    grid-template-columns: 11fr 1fr ;
+    grid-gap:4%;
     justify-content: start;
     align-items: center;
     background-color: white ;
-    border-radius: 25px ;
+    border-radius: 5% / 20% ;
     box-shadow: 5px 5px 0 0;
     margin-bottom: 5%;
     padding: 5% 5% 5% 5%;
 
+    font-size: 4.8vw;
+
     h4{
-        font-size: 1.2em;
+        font-size: 1.1em;
         margin:0;
         padding:0;
         grid-area: titre;

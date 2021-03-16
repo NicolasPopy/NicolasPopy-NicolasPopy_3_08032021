@@ -10,6 +10,7 @@ html, body, main {
   padding: 0;
   box-sizing: border-box;
   font-family: roboto;
+  font-size: 4vw;
 }
 
 #headeromf {
@@ -58,23 +59,13 @@ html, body, main {
   font-size: 1.2em;
 }
 
-#btn_explore {
-  /*     background-image:linear-gradient($SecondaryColor, $PrimaryColor);
-      border-radius: 45px;
-      font-size:1.6em;
-      font-weight: bold;
-      color:white;
-      border:none;
-      padding:4% 6%;
-      margin-bottom: 15%; */
-}
-
 #home_fonctionnement {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /*  font-size: 4vw; */
 }
 #home_fonctionnement h1 {
   align-self: start;
@@ -97,7 +88,7 @@ html, body, main {
   font-size: 1vw;
 }
 .btn_fonctionnement .numero {
-  transform: translateX(-15px);
+  transform: translateX(-45%);
   font-size: 3.5em;
 }
 .btn_fonctionnement .fa-circle {
@@ -218,7 +209,7 @@ html, body, main {
 #menu {
   width: 100%;
   transform: translateY(-60px);
-  border-radius: 45px 45px 0 0;
+  border-radius: 12vw 12vw 0 0;
   box-sizing: border-box;
   padding: 6% 4% 8% 4%;
   margin: 0;
@@ -235,10 +226,12 @@ html, body, main {
   grid-template-rows: 100%;
   grid-template-columns: 6fr 1fr;
   align-items: center;
+  font-size: 4vw;
 }
 #menu_titre h1 {
   font-family: Shrikhand;
   grid-area: titre;
+  font-size: 2.2em;
 }
 #menu_titre .fa-heart-o {
   font-size: 1.9em;
@@ -247,6 +240,7 @@ html, body, main {
 
 .Entree, .Plat, .Dessert {
   margin-bottom: 3.5em;
+  font-size: 4vw;
 }
 
 .barreH {
@@ -258,20 +252,21 @@ html, body, main {
 
 .choix {
   display: grid;
-  grid-template-areas: "titre  vide" "soustitre prix";
+  grid-template-areas: "titre  titre" "soustitre prix";
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 9fr 1fr;
-  grid-gap: 8%;
+  grid-template-columns: 11fr 1fr;
+  grid-gap: 4%;
   justify-content: start;
   align-items: center;
   background-color: white;
-  border-radius: 25px;
+  border-radius: 5%/20%;
   box-shadow: 5px 5px 0 0;
   margin-bottom: 5%;
   padding: 5% 5% 5% 5%;
+  font-size: 4.8vw;
 }
 .choix h4 {
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin: 0;
   padding: 0;
   grid-area: titre;
@@ -293,7 +288,7 @@ html, body, main {
 #btn_gradient {
   background-image: linear-gradient(#FF79DA, #9356DC);
   border-radius: 45px;
-  font-size: 1em;
+  font-size: 6vw;
   font-weight: bold;
   color: white;
   border: none;
@@ -307,6 +302,7 @@ html, body, main {
 #headeromf {
   box-sizing: border-box;
   width: 100%;
+  height: 12vw;
   display: grid;
   grid-template-areas: "fleche logo vide";
   grid-template-rows: 100%;
@@ -315,7 +311,7 @@ html, body, main {
 }
 #headeromf .fa-arrow-left {
   grid-area: fleche;
-  font-size: 1.2em;
+  font-size: 6vw;
   margin: 0;
   padding: 0 0 0 20%;
 }
@@ -323,6 +319,7 @@ html, body, main {
   grid-area: logo;
   justify-self: center;
   margin: 0;
+  width: 100%;
   padding: 1em 0;
 }
 
