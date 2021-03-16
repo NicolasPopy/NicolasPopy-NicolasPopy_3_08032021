@@ -2,7 +2,7 @@
   "name": "nicolaspopy_3_08032021",
   "version": "1.0.0",
   "description": "Projet 3 d'open ClassRooms",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
   },
