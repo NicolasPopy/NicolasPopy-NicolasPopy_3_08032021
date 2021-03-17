@@ -13,14 +13,10 @@ html, body, main {
   font-size: 4vw;
 }
 
-#headeromf {
+#home {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-#headeromf #header_logoomf {
-  align-items: center;
 }
 
 #homerecherche {
@@ -31,7 +27,7 @@ html, body, main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #3f3f3f;
+  background-color: #838383;
 }
 #homerecherche i {
   display: inline;
@@ -65,7 +61,6 @@ html, body, main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /*  font-size: 4vw; */
 }
 #homefonctionnement h1 {
   align-self: start;
@@ -83,7 +78,7 @@ html, body, main {
   width: 80%;
   height: 20vw;
   border-radius: 15px 15px 15px 15px;
-  box-shadow: 6px 6px 2px 0px #3f3f3f;
+  box-shadow: 6px 6px 2px 0px #838383;
   background-color: #cecece;
   font-size: 1vw;
 }
@@ -137,7 +132,7 @@ html, body, main {
   margin: 0;
   background-color: white;
   border-radius: 25px;
-  box-shadow: 0.5em 0.5em #3f3f3f;
+  box-shadow: 0.5em 0.5em #838383;
 }
 .restaurant figure img {
   width: 100%;
@@ -170,30 +165,6 @@ html, body, main {
   grid-area: coeur;
   justify-self: center;
   font-size: 1.6em;
-}
-
-footer {
-  background-color: #3f3f3f;
-  color: white;
-  padding: 4% 6%;
-}
-
-#footer_menu {
-  margin: 0;
-  padding: 0;
-}
-#footer_menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-#footer_menu ul li {
-  margin: 0;
-  text-decoration: none;
-}
-#footer_menu a, #footer_menu a:hover, #footer_menu a:visited, #footer_menu a:link, #footer_menu a:active {
-  text-decoration: none;
-  color: white;
 }
 
 html, body, main {
@@ -255,6 +226,55 @@ html, body, main {
   border-top: 4px solid #99E2D0;
 }
 
+#headeromf {
+  box-sizing: border-box;
+  width: 100%;
+  height: 12vw;
+  display: grid;
+  grid-template-areas: "fleche logo vide";
+  grid-template-rows: 100%;
+  grid-template-columns: 3fr 4fr 3fr;
+  justify-content: start;
+  align-items: center;
+}
+#headeromf .fa-arrow-left {
+  grid-area: fleche;
+  font-size: 6vw;
+  margin: 0;
+  padding: 0 0 0 20%;
+}
+#headeromf #header_logoomf {
+  grid-area: logo;
+  justify-self: center;
+  margin: 0;
+  width: 100%;
+  padding: 1em 0;
+}
+
+footer {
+  background-color: #838383;
+  color: white;
+  padding: 4% 6%;
+}
+
+#footer_menu {
+  margin: 0;
+  padding: 0;
+}
+#footer_menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#footer_menu ul li {
+  margin: 0;
+  text-decoration: none;
+}
+#footer_menu a, #footer_menu a:hover, #footer_menu a:visited, #footer_menu a:link, #footer_menu a:active {
+  text-decoration: none;
+  color: white;
+}
+
 .choix {
   display: grid;
   grid-template-areas: "titre  titre" "soustitre prix";
@@ -301,36 +321,6 @@ html, body, main {
 }
 #btn_gradient--center {
   display: flex;
-  justify-content: center;
-}
-
-#headeromf {
-  box-sizing: border-box;
-  width: 100%;
-  height: 12vw;
-  display: grid;
-  grid-template-areas: "fleche logo vide";
-  grid-template-rows: 100%;
-  grid-template-columns: 3fr 4fr 3fr;
-  justify-content: start;
-}
-#headeromf .fa-arrow-left {
-  grid-area: fleche;
-  font-size: 6vw;
-  margin: 0;
-  padding: 0 0 0 20%;
-}
-#headeromf #header_logoomf {
-  grid-area: logo;
-  justify-self: center;
-  margin: 0;
-  width: 100%;
-  padding: 1em 0;
-}
-
-#home {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 

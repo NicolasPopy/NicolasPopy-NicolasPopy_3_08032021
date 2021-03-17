@@ -1,0 +1,26 @@
+
+footer{
+    background-color:$FifthColor;
+    color:white;
+    padding:4% 6%;
+}
+
+
+#footer_menu{
+    margin:0;
+    padding:0;
+    ul{
+        list-style-type: none; 
+        margin:0;
+        padding: 0;
+        li{
+            margin:0;
+            text-decoration: none;
+        }
+    }
+    a, a:hover, a:visited, a:link, a:active{
+        text-decoration: none;
+        
+        color:white;
+    }
+}

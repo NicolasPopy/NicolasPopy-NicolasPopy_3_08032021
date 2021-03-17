@@ -11,14 +11,12 @@ html, body, main{
 }
 
 
-#headeromf{
-    display:flex;
-    flex-direction:row;
+
+
+#home{
+    display: flex;
+    flex-direction:column;
     justify-content:center;
-    align-items: center;
-    #header_logoomf{
-        align-items: center;
-    }
 }
 
 #homerecherche{
@@ -53,7 +51,7 @@ html, body, main{
     background-color: $FourthColor;
     font-family: Roboto;
     padding-bottom: 10%;
-     
+
     h1{
         font-size: 1.5em;    
         padding:0 5%; 
@@ -76,7 +74,6 @@ html, body, main{
     align-items:center;
     justify-content:center;
 
-   /*  font-size: 4vw; */
     h1{
         align-self: start;
         padding-left: 20px;
@@ -205,28 +202,3 @@ html, body, main{
 }
 
 
-footer{
-    background-color:$FifthColor;
-    color:white;
-    padding:4% 6%;
-}
-
-
-#footer_menu{
-    margin:0;
-    padding:0;
-    ul{
-        list-style-type: none; 
-        margin:0;
-        padding: 0;
-        li{
-            margin:0;
-            text-decoration: none;
-        }
-    }
-    a, a:hover, a:visited, a:link, a:active{
-        text-decoration: none;
-        
-        color:white;
-    }
-}
