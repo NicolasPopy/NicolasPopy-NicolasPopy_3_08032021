@@ -21,7 +21,7 @@ html, body, main{
     }
 }
 
-#home_recherche{
+#homerecherche{
     width: 100%;
     margin:0;
     height:3em;
@@ -41,15 +41,14 @@ html, body, main{
     }
 }
 
-#rechercheville{    
+#homerecherche__ville{    
     border:0;
-
     margin:0;
 }
 
 
 
-#home_explore{
+#homeexplore{
     text-align:center;
     background-color: $FourthColor;
     font-family: Roboto;
@@ -70,7 +69,7 @@ html, body, main{
 // FONCTIONNEMENT
 //################################
 
-#home_fonctionnement{
+#homefonctionnement{
     width:100%;
     display:flex;
     flex-direction:column;
@@ -86,7 +85,7 @@ html, body, main{
 }
 
 
-.btn_fonctionnement{
+.homefonctionnement__btn{
     display:grid;
     grid-template-areas: "number icone text";
     grid-template-rows: 100%;
@@ -103,14 +102,13 @@ html, body, main{
     font-size: 1vw;
 
 
-    .numero{
+    .homefonctionnement__numero{
         transform: translateX(-45%);
         font-size:3.5em
     }
     .fa-circle{
         color:$PrimaryColor;
         grid-area: number;
-
         vertical-align: middle;
 
     }
