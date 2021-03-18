@@ -6,6 +6,18 @@
 @import "./layouts/header";
 @import "./layouts/footer";
 
-@import "./components/choix";
+
 @import "./components/btnviolet";
 
+
+html, body{
+    font-family: roboto;   
+    height: 100%;
+    font-size: 4vw;
+    margin:0;
+}
+
+
+main{
+    background-color:$FourthColor;
+}

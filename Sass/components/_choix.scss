@@ -5,16 +5,16 @@
                         "soustitre prix";
     grid-template-rows: 1fr 1fr ;
     grid-template-columns: 11fr 1fr ;
-    grid-gap:4%;
+    grid-gap:10%;
     justify-content: start;
     align-items: center;
     background-color: white ;
     border-radius: 5% / 20% ;
-    box-shadow: 5px 5px 0 0;
+    box-shadow: 0.5em 0.5em 0.5em 0 $FifthColor;
     margin-bottom: 5%;
-    padding: 5% 5% 5% 5%;
+    padding: 4% ;
 
-    font-size: 4.8vw;
+    font-size: 4.2vw;
 
     h4{
         font-size: 1.1em;

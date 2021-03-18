@@ -1,31 +1,22 @@
-@import "../utils/variables";
-
-html, body, main{
-    width: 100%;
-    margin: 0 ;
-    padding:0 ;
-    box-sizing: border-box;
-    font-family: roboto;
-}
 
 
-#francaise
-{
-    width: 100%;
-}
+@import "../components/choix";
+
+
+
 
 #header_resto{
     width: 100%;
 }
 
-
 #menu
 {
     width:100%;
+
     transform: translateY(-60px);
     border-radius: 12vw 12vw 0 0;
     box-sizing: border-box;
-    padding:6% 4% 8% 4%;
+    padding:6% 5% 3% 5%;
 
     margin:0;
     background-color:$FourthColor;
@@ -59,14 +50,19 @@ html, body, main{
 }
 
 .Entree, .Plat, .Dessert{
-    margin-bottom: 3.5em;
+    margin-bottom: 3em;
     font-size: 4vw;
 
+    h3{
+        padding-left:2.5%;
+        margin:0;
+    }
 
     .barreH{
         height:4vw;
         width:3em;
         margin-top:0.5em;
+        margin-left:2.5%;
         border-top: 4px solid $ThirdColor;
     }
 
