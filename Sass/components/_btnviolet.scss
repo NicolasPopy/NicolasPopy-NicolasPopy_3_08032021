@@ -5,15 +5,22 @@
     font-weight: bold;
     color:white;
     border:none;
-    padding:5% 4.5%;
+    padding:1.3rem 1.8rem;
 
     &--center{
         display:flex;
         justify-content:center;
     }
     &--larger{
-        padding:5% 15%;
+        padding:1.3rem 1.8rem;
     }
 
 }
 
+@media (min-width: 768px)
+{
+.btn_gradient{
+    font-size: 1vw;
+    padding:0.5rem 0.9rem;
+}  
+}

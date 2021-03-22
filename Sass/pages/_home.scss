@@ -2,15 +2,33 @@
 @import "../components/restaurant";
 
 
-
-
 #home{
-    display: flex;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;    
+    grid-template-areas: "homerecherche" "homeexplore" "homefonctionnement" "homerestaurants";
+
+    gap: 0px 0px;
+    justify-items: center;
+    align-items: center;
+
+/*     display: flex;
     flex-direction:column;
-    justify-content:center;
+    justify-content:center; */
+}
+
+
+@media (min-width: 768px)
+{
+    #home{
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto auto auto;    
+        grid-template-areas: "homerecherche homerecherche" "homeexplore homefonctionnement" "homerestaurants homerestaurants";
+    }
 }
 
 #homerecherche{
+    grid-area:homerecherche;
     width: 100%;
     margin:0;
     height:3em;
@@ -18,8 +36,6 @@
     flex-direction:row;
     justify-content:center;
     align-items: center;
-
-
 
     background-color:$FifthColor;
     i{
@@ -38,11 +54,12 @@
 
 
 #homeexplore{
+    grid-area:homeexplore;
     text-align:center;
     background-color:  $FourthColor;
     font-family: Roboto;
-    padding-top: 5%;
-    padding-bottom: 10%;
+    padding-top: 0.3rem;
+    padding-bottom: 1.3rem;
 
     h1{
         font-size: 1.6em;    
@@ -54,25 +71,36 @@
 }
 
 
+@media (min-width: 768px)
+{
+    #homeexplore{
+        padding-top: 0.15rem;
+        padding-bottom: 0.5rem; 
+    }
+}
+
+
 
 //################################
 // FONCTIONNEMENT
 //################################
 
 #homefonctionnement{
+    grid-area:homefonctionnement;
     width:100%;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    padding-top:5%;
-    padding-bottom:15%;
+    padding-top:0.5rem;
+    padding-bottom:1rem;
     background-color:  white;
+
+    font-size: 2.8vw;
 
     h1{
         align-self: start;
-        padding-left: 20px;
-        
+        padding-left: 20px;        
     }
 }
 
@@ -86,26 +114,24 @@
     align-items:center;
     margin:0 0 6% 0;
     width:90%;
-    height:20vw;
+    height:6.5em;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 0.5em 0.5em 0.5em 0 $FifthColor;
     background-color:$FourthColor;
 
-    font-size: 1vw;
+
 
 
     .homefonctionnement__numero{
         transform: translateX(-45%);
-        font-size:3.5em;
+        font-size:1.2em;
 
     
     }
     .fa-circle{
         color:$PrimaryColor;
         grid-area: number;
-        vertical-align: middle;
-
-       
+        vertical-align: middle;       
 
     }
     .circle-text{
@@ -115,27 +141,47 @@
     }
     .icone_fonctionnement{
         grid-area: icone;
-        font-size: 5em;
-        justify-self: center
-
-     
+        font-size: 1.6em;
+        justify-self: center;
+        margin-left:0.6em;     
     }
 
     p{
         grid-area: text;
-        font-size: 5em;
+        font-size: 1.6em;
         font-weight: bold;
-
-        margin-left: 4vw;
+        padding:0;
+        margin:0;
+        margin-left: 1.2em;
     }
 }
 
+@media (min-width: 768px)
+{
+    #homefonctionnement{
+        background-color: $FourthColor;
+        grid-area:homefonctionnement;
+        font-size: 0.75vw;
+        width: auto;
+        padding:0 10%;
+        h1{
+            font-size: 2.5em;
+        }
+
+    }
+
+    .homefonctionnement__btn{
+        background-color:$FifthColor;
+    }
+}
+
+//############
+// Restaurants
+//############
 
 
-
-
-
-#home_restaurants{
+#homerestaurants{
+    grid-area:homerestaurants;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -152,3 +198,22 @@
 }
 
 
+@media (min-width: 768px)
+{
+    #homerestaurants{
+
+        flex-direction:row;
+        justify-content:space-around;
+        width: 90%;
+        flex-wrap: wrap;
+        height:auto;
+        box-sizing: border-box;  
+
+        h1{
+            margin:1em 0 0.8em 0;
+            width:100%;
+            text-align:center;
+            font-size: 2.4em;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+
+html, body{
+    font-family: roboto;   
+    height: 100%;
+    font-size: 4vw;
+    margin:0;
+}
+
+@media (min-width: 768px)
+{
+    body{
+        width: 80vw;
+        font-size: 1.2vw;
+        margin:auto;
+
+    }
+}
+
+main{
+    background-color:$FourthColor;
+}

@@ -2,67 +2,85 @@
     width:90%;
     margin-bottom: 8%;
 
-        a, a:hover, a:visited, a:link, a:active{
-            text-decoration: none;
-            
-            color:black;
-        }
+    a, a:hover, a:visited, a:link, a:active{
+        text-decoration: none;            
+        color:black;
+    }
 
-        figure{
-            position:relative;
+    figure{
+        position:relative;
+        width:100%;
+        height:13rem;
+        margin:0 ;
+        background-color:white;
+        border-radius:25px;
+        box-shadow: 0.5em 0.5em 0.5em 0 $FifthColor;
+        
+        img{
             width:100%;
-            height:55vw;
-            margin:0 ;
-            background-color:white;
-            border-radius:25px;
-            box-shadow: 0.5em 0.5em 0.5em 0 $FifthColor;
-            img{
-                width:100%;
-                height:40vw;
-                border-radius:25px 25px 0 0;
-                object-fit: cover;
-            }
-            .restaurant_new{
-                background-color:aqua;
-                color: rgb(45, 180, 140);
-                font-family: roboto;
-                font-weight: bold;
-                position: absolute;
-                top: 7%;
-                left: 71%;
-                padding:3.5%;
-                border-radius: 5px;
-            }
-            figcaption{
-                padding:1% 0 0 5%;
+            height:8rem;
+            border-radius:25px 25px 0 0;
+            object-fit: cover;
+        }
+        .restaurant_new{
+            background-color:aqua;
+            color: rgb(45, 180, 140);
+            font-family: roboto;
+            font-weight: bold;
+            position: absolute;
+            top: 7%;
+            left: 71%;
+            padding:3.5%;
+            border-radius: 5px;
+        }
+        figcaption{
+            padding:1% 0 0 5%;
+            margin:0;
+
+            display: grid;
+            grid-template-columns: 1.5fr 0.5fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 0px 0px;
+
+            grid-template-areas:
+            "titre coeur"
+            "soustitre coeur";
+            justify-items:start;
+            align-items: center;
+            h3{
                 margin:0;
-
-                display: grid;
-                grid-template-columns: 1.5fr 0.5fr;
-                grid-template-rows: 1fr 1fr;
-                gap: 0px 0px;
-
-                grid-template-areas:
-                "titre coeur"
-                "soustitre coeur";
-                justify-items:start;
-                align-items: center;
-                h3{
-                    margin:0;
-                    padding:0;
-                    grid-area: titre;
-                }
-                p{
-                    grid-area: soustitre;
-                    margin:0;
-                    padding:0;
-                }
-                i{
-                    grid-area: coeur;
-                    justify-self: center;
-                    font-size: 1.6em;
-                }
+                padding:0;
+                grid-area: titre;
             }
-        }    
+            p{
+                grid-area: soustitre;
+                margin:0;
+                padding:0;
+            }
+            i{
+                grid-area: coeur;
+                justify-self: center;
+                font-size: 1.2em;
+            }
+        }
+    }    
 }
 
+@media (min-width: 768px)
+{
+    .restaurant{
+        margin-bottom: 4%;
+        width:44%;
+        height:auto;
+    }
+
+    .restaurant{
+
+        figure{
+            height:14em;
+            img{
+                height:10em;
+            }
+        }
+    }
+}
