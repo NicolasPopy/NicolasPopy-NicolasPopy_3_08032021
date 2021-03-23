@@ -11,10 +11,6 @@
     gap: 0px 0px;
     justify-items: center;
     align-items: center;
-
-/*     display: flex;
-    flex-direction:column;
-    justify-content:center; */
 }
 
 
@@ -24,6 +20,8 @@
         grid-template-columns: 60% 40%;
         grid-template-rows: auto auto auto;    
         grid-template-areas: "homerecherche homerecherche" "homeexplore homefonctionnement" "homerestaurants homerestaurants";
+
+        font-size: 1.5em;
     }
 }
 
@@ -62,11 +60,11 @@
     padding-bottom: 1.3rem;
 
     h1{
-        font-size: 1.6em;    
+        font-size: 1.5em;    
         padding:0 15%; 
     }
     p{
-        font-size:1.2em;
+        font-size:1.15em;
     }
 }
 
@@ -92,7 +90,7 @@
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    padding-top:0.5rem;
+    padding-top:0.8rem;
     padding-bottom:1rem;
     background-color:  white;
 
@@ -109,7 +107,7 @@
     display:grid;
     grid-template-areas: "number icone text";
     grid-template-rows: 100%;
-    grid-template-columns: 1fr 1fr 10fr;
+    grid-template-columns: 1.2em 1em auto;
     justify-content: start;
     align-items:center;
     margin:0 0 6% 0;
@@ -119,18 +117,15 @@
     box-shadow: 0.5em 0.5em 0.5em 0 $FifthColor;
     background-color:$FourthColor;
 
-
-
-
     .homefonctionnement__numero{
         transform: translateX(-45%);
         font-size:1.2em;
-
-    
+        grid-area: number;  
+        
     }
     .fa-circle{
         color:$PrimaryColor;
-        grid-area: number;
+        
         vertical-align: middle;       
 
     }
@@ -143,7 +138,7 @@
         grid-area: icone;
         font-size: 1.6em;
         justify-self: center;
-        margin-left:0.6em;     
+        margin-left:2.4em; 
     }
 
     p{
@@ -152,7 +147,7 @@
         font-weight: bold;
         padding:0;
         margin:0;
-        margin-left: 1.2em;
+        margin-left: 2.4em;
     }
 }
 
@@ -161,17 +156,23 @@
     #homefonctionnement{
         background-color: $FourthColor;
         grid-area:homefonctionnement;
-        font-size: 0.75vw;
+        font-size: 0.8vw;
         width: auto;
         padding:0 10%;
         h1{
             font-size: 2.5em;
         }
-
     }
+
+    
 
     .homefonctionnement__btn{
         background-color:$FifthColor;
+
+        .homefonctionnement__numero{
+            font-size:1.4em;
+
+        }
     }
 }
 

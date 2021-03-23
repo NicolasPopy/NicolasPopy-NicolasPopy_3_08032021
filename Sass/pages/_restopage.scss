@@ -1,0 +1,141 @@
+@import "../components/choix";
+
+
+
+#menu{
+    display:grid;
+    grid-template-areas: "image" "titre" "entree" "plat" "dessert" "bouton";
+    grid-template-rows: auto;
+    grid-template-columns:100%; 
+
+    justify-content: center;
+    
+    width:100%;
+    margin:0;
+    font-size: 4vw;
+} 
+
+
+@media (min-width: 768px){
+    #menu{
+        grid-template-areas: "image image titre"  "entree plat dessert"  "bouton bouton bouton";
+        grid-template-rows: auto auto auto;
+        grid-template-columns:33% 33% 34%; 
+        
+        font-size: 1.8vw;
+
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+    }
+}
+
+
+
+#header_resto{
+    width: 100%;
+    margin:0;
+
+    grid-area: image;
+}
+
+@media (min-width: 768px){
+    #header_resto{
+        border-bottom-right-radius: 25px;
+        border-top-left-radius: 25px;
+    }
+}
+
+
+#menu__titre{
+    display:grid;
+    grid-template-areas: "titre coeur";
+    grid-template-rows: 100%;
+    grid-template-columns:6fr 1fr;
+
+    transform: translateY(-60px);
+    margin-bottom:-60px; // pour compenser le décalage vers le haut de l'arrondi au dessus de l'image
+    border-radius: 12vw 12vw 0 0;
+    background-color:$FourthColor;
+
+    align-items: center;
+    font-size: 1em;
+    padding:6% 5% 0% 5%;
+
+    grid-area: titre;
+
+
+    h1{
+        font-family: Shrikhand;
+        grid-area: titre;
+        font-size: 2.2em;
+    }
+
+    .fa-heart-o{
+        font-size: 1.9em;
+        grid-area: coeur;
+    }
+}
+
+@media (min-width: 768px){
+    #menu__titre{
+        grid-template-areas: "titre" "coeur";
+        grid-template-rows: auto auto;
+        grid-template-columns:auto;
+        text-align:center;
+
+        margin-bottom:0;
+        transform: none;
+        border-top-right-radius: 25px;
+
+    }
+}
+
+.Entre{
+    grid-area: entree;
+}
+
+.Plat{
+    grid-area: plat;
+}
+
+.Dessert{
+    grid-area: dessert;
+}
+
+
+.Entree, .Plat, .Dessert{
+    margin-bottom: 3em;
+    font-size: 1em;
+    padding:0% 5% 1% 5%;
+
+    h3{
+        padding-left:2.5%;
+        margin:0;
+    }
+
+    .barreH{
+        height:4vw;
+        width:3em;
+        margin-top:0.5em;
+        margin-left:2.5%;
+        border-top: 4px solid $ThirdColor;
+    }
+}
+
+@media (min-width: 768px){
+    .Entree, .Plat, .Dessert{
+        margin-top: 2em;
+        margin-bottom: 1em;
+
+        .barreH{
+            height:1.5vw;
+            width:2em;
+        }
+    }
+
+}
+
+.btn_conteneur{
+    grid-area:bouton;
+    margin-bottom: 3em;
+}

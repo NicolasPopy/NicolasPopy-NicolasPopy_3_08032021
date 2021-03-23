@@ -6,11 +6,22 @@ html, body{
     margin:0;
 }
 
-@media (min-width: 768px)
+@media (min-width: 768px) and (max-width:1024px)
 {
     body{
-        width: 80vw;
+        width: 95vw;
         font-size: 1.2vw;
+        margin:auto;
+
+    }
+}
+
+
+@media (min-width: 1024px) 
+{
+    body{
+        width: 75vw;
+        font-size: 0.8vw;
         margin:auto;
 
     }
@@ -18,4 +29,6 @@ html, body{
 
 main{
     background-color:$FourthColor;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
