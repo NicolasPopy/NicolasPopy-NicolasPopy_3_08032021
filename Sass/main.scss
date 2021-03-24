@@ -1,7 +1,7 @@
 @import "./utils/variables";
 
-@import "./pages/home";
-@import "./pages/resto";
+@import "./pages/homepage";
+@import "./pages/restopage";
 
 @import "./layouts/header";
 @import "./layouts/footer";
@@ -9,15 +9,4 @@
 
 @import "./components/btnviolet";
 
-
-html, body{
-    font-family: roboto;   
-    height: 100%;
-    font-size: 4vw;
-    margin:0;
-}
-
-
-main{
-    background-color:$FourthColor;
-}
+@import "./base/base";

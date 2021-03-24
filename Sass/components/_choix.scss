@@ -4,8 +4,8 @@
     grid-template-areas: "titre  titre"
                         "soustitre prix";
     grid-template-rows: 1fr 1fr ;
-    grid-template-columns: 11fr 1fr ;
-    grid-gap:10%;
+    grid-template-columns: 12fr 1fr ;
+    grid-gap:1%;
     justify-content: start;
     align-items: center;
     background-color: white ;
@@ -18,7 +18,7 @@
 
     h4{
         font-size: 1.1em;
-        margin:0;
+        margin:0 0 1% 0;
         padding:0;
         grid-area: titre;
     }
@@ -34,5 +34,24 @@
         padding:0;
         grid-area: prix;
         justify-self: end;
+    }
+}
+
+
+@media (min-width: 768px)
+{
+    .choix{
+        font-size: 1.5vw;
+        padding: 6% 4% ;
+
+    }
+}
+
+@media (min-width: 1024px)
+{
+    .choix{
+        font-size: 1.2vw;
+        padding: 6% 4% ;
+
     }
 }

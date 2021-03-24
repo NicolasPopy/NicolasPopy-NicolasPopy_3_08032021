@@ -1,0 +1,220 @@
+
+@import "../components/restaurant";
+
+
+#home{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;    
+    grid-template-areas: "homerecherche" "homeexplore" "homefonctionnement" "homerestaurants";
+
+    gap: 0px 0px;
+    justify-items: center;
+    align-items: center;
+}
+
+
+@media (min-width: 768px)
+{
+    #home{
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto auto auto;    
+        grid-template-areas: "homerecherche homerecherche" "homeexplore homefonctionnement" "homerestaurants homerestaurants";
+
+        font-size: 1.5em;
+    }
+}
+
+#homerecherche{
+    grid-area:homerecherche;
+    width: 100%;
+    margin:0;
+    height:3em;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+
+    background-color:$FifthColor;
+    i{
+        display:inline;
+    }
+    p{
+        display:inline;
+    }
+}
+
+#homerecherche__ville{    
+    border:0;
+    margin:0 0 0 1%;
+}
+
+
+
+#homeexplore{
+    grid-area:homeexplore;
+    text-align:center;
+    background-color:  $FourthColor;
+    font-family: Roboto;
+    padding-top: 0.3rem;
+    padding-bottom: 1.3rem;
+
+    h1{
+        font-size: 1.5em;    
+        padding:0 15%; 
+    }
+    p{
+        font-size:1.15em;
+    }
+}
+
+
+@media (min-width: 768px)
+{
+    #homeexplore{
+        padding-top: 0.15rem;
+        padding-bottom: 0.5rem; 
+    }
+}
+
+
+
+//################################
+// FONCTIONNEMENT
+//################################
+
+#homefonctionnement{
+    grid-area:homefonctionnement;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding-top:0.8rem;
+    padding-bottom:1rem;
+    background-color:  white;
+
+    font-size: 2.8vw;
+
+    h1{
+        align-self: start;
+        padding-left: 20px;        
+    }
+}
+
+
+.homefonctionnement__btn{
+    display:grid;
+    grid-template-areas: "number icone text";
+    grid-template-rows: 100%;
+    grid-template-columns: 1.2em 1em auto;
+    justify-content: start;
+    align-items:center;
+    margin:0 0 6% 0;
+    width:90%;
+    height:6.5em;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0.5em 0.5em 0.5em 0 $FifthColor;
+    background-color:$FourthColor;
+
+    .homefonctionnement__numero{
+        transform: translateX(-45%);
+        font-size:1.2em;
+        grid-area: number;  
+        
+    }
+    .fa-circle{
+        color:$PrimaryColor;
+        
+        vertical-align: middle;       
+
+    }
+    .circle-text{
+        color:white;
+        grid-area: number;
+
+    }
+    .icone_fonctionnement{
+        grid-area: icone;
+        font-size: 1.6em;
+        justify-self: center;
+        margin-left:2.4em; 
+    }
+
+    p{
+        grid-area: text;
+        font-size: 1.6em;
+        font-weight: bold;
+        padding:0;
+        margin:0;
+        margin-left: 2.4em;
+    }
+}
+
+@media (min-width: 768px)
+{
+    #homefonctionnement{
+        background-color: $FourthColor;
+        grid-area:homefonctionnement;
+        font-size: 0.8vw;
+        width: auto;
+        padding:0 10%;
+        h1{
+            font-size: 2.5em;
+        }
+    }
+
+    
+
+    .homefonctionnement__btn{
+        background-color:$FifthColor;
+
+        .homefonctionnement__numero{
+            font-size:1.4em;
+
+        }
+    }
+}
+
+//############
+// Restaurants
+//############
+
+
+#homerestaurants{
+    grid-area:homerestaurants;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    padding:0;
+    margin:0;
+    background-color: $FourthColor;
+
+    h1{
+        align-self: start;
+        padding-left: 20px;
+    }
+}
+
+
+@media (min-width: 768px)
+{
+    #homerestaurants{
+
+        flex-direction:row;
+        justify-content:space-around;
+        width: 90%;
+        flex-wrap: wrap;
+        height:auto;
+        box-sizing: border-box;  
+
+        h1{
+            margin:1em 0 0.8em 0;
+            width:100%;
+            text-align:center;
+            font-size: 2.4em;
+        }
+    }
+}

@@ -11,7 +11,7 @@
 .restaurant figure {
   position: relative;
   width: 100%;
-  height: 55vw;
+  height: 13rem;
   margin: 0;
   background-color: white;
   border-radius: 25px;
@@ -19,7 +19,7 @@
 }
 .restaurant figure img {
   width: 100%;
-  height: 40vw;
+  height: 8rem;
   border-radius: 25px 25px 0 0;
   object-fit: cover;
 }
@@ -58,16 +58,43 @@
 .restaurant figure figcaption i {
   grid-area: coeur;
   justify-self: center;
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
 
+@media (min-width: 768px) {
+  .restaurant {
+    margin-bottom: 4%;
+    width: 44%;
+    height: auto;
+  }
+
+  .restaurant figure {
+    height: 20em;
+  }
+  .restaurant figure img {
+    height: 16em;
+  }
+}
 #home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "homerecherche" "homeexplore" "homefonctionnement" "homerestaurants";
+  gap: 0px 0px;
+  justify-items: center;
+  align-items: center;
 }
 
+@media (min-width: 768px) {
+  #home {
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "homerecherche homerecherche" "homeexplore homefonctionnement" "homerestaurants homerestaurants";
+    font-size: 1.5em;
+  }
+}
 #homerecherche {
+  grid-area: homerecherche;
   width: 100%;
   margin: 0;
   height: 3em;
@@ -90,29 +117,38 @@
 }
 
 #homeexplore {
+  grid-area: homeexplore;
   text-align: center;
   background-color: #cecece;
   font-family: Roboto;
-  padding-top: 5%;
-  padding-bottom: 10%;
+  padding-top: 0.3rem;
+  padding-bottom: 1.3rem;
 }
 #homeexplore h1 {
-  font-size: 1.6em;
+  font-size: 1.5em;
   padding: 0 15%;
 }
 #homeexplore p {
-  font-size: 1.2em;
+  font-size: 1.15em;
 }
 
+@media (min-width: 768px) {
+  #homeexplore {
+    padding-top: 0.15rem;
+    padding-bottom: 0.5rem;
+  }
+}
 #homefonctionnement {
+  grid-area: homefonctionnement;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 5%;
-  padding-bottom: 15%;
+  padding-top: 0.8rem;
+  padding-bottom: 1rem;
   background-color: white;
+  font-size: 2.8vw;
 }
 #homefonctionnement h1 {
   align-self: start;
@@ -123,24 +159,23 @@
   display: grid;
   grid-template-areas: "number icone text";
   grid-template-rows: 100%;
-  grid-template-columns: 1fr 1fr 10fr;
+  grid-template-columns: 1.2em 1em auto;
   justify-content: start;
   align-items: center;
   margin: 0 0 6% 0;
   width: 90%;
-  height: 20vw;
+  height: 6.5em;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 0.5em 0.5em 0.5em 0 #838383;
   background-color: #cecece;
-  font-size: 1vw;
 }
 .homefonctionnement__btn .homefonctionnement__numero {
   transform: translateX(-45%);
-  font-size: 3.5em;
+  font-size: 1.2em;
+  grid-area: number;
 }
 .homefonctionnement__btn .fa-circle {
   color: #9356DC;
-  grid-area: number;
   vertical-align: middle;
 }
 .homefonctionnement__btn .circle-text {
@@ -149,17 +184,40 @@
 }
 .homefonctionnement__btn .icone_fonctionnement {
   grid-area: icone;
-  font-size: 5em;
+  font-size: 1.6em;
   justify-self: center;
+  margin-left: 2.4em;
 }
 .homefonctionnement__btn p {
   grid-area: text;
-  font-size: 5em;
+  font-size: 1.6em;
   font-weight: bold;
-  margin-left: 4vw;
+  padding: 0;
+  margin: 0;
+  margin-left: 2.4em;
 }
 
-#home_restaurants {
+@media (min-width: 768px) {
+  #homefonctionnement {
+    background-color: #cecece;
+    grid-area: homefonctionnement;
+    font-size: 0.8vw;
+    width: auto;
+    padding: 0 10%;
+  }
+  #homefonctionnement h1 {
+    font-size: 2.5em;
+  }
+
+  .homefonctionnement__btn {
+    background-color: #838383;
+  }
+  .homefonctionnement__btn .homefonctionnement__numero {
+    font-size: 1.4em;
+  }
+}
+#homerestaurants {
+  grid-area: homerestaurants;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -169,17 +227,33 @@
   margin: 0;
   background-color: #cecece;
 }
-#home_restaurants h1 {
+#homerestaurants h1 {
   align-self: start;
   padding-left: 20px;
 }
 
+@media (min-width: 768px) {
+  #homerestaurants {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    flex-wrap: wrap;
+    height: auto;
+    box-sizing: border-box;
+  }
+  #homerestaurants h1 {
+    margin: 1em 0 0.8em 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2.4em;
+  }
+}
 .choix {
   display: grid;
   grid-template-areas: "titre  titre" "soustitre prix";
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 11fr 1fr;
-  grid-gap: 10%;
+  grid-template-columns: 12fr 1fr;
+  grid-gap: 1%;
   justify-content: start;
   align-items: center;
   background-color: white;
@@ -191,7 +265,7 @@
 }
 .choix h4 {
   font-size: 1.1em;
-  margin: 0;
+  margin: 0 0 1% 0;
   padding: 0;
   grid-area: titre;
 }
@@ -209,31 +283,64 @@
   justify-self: end;
 }
 
+@media (min-width: 768px) {
+  .choix {
+    font-size: 1.5vw;
+    padding: 6% 4%;
+  }
+}
+@media (min-width: 1024px) {
+  .choix {
+    font-size: 1.2vw;
+    padding: 6% 4%;
+  }
+}
+#menu {
+  display: grid;
+  grid-template-areas: "image" "titre" "entree" "plat" "dessert" "bouton";
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  font-size: 4vw;
+}
+
+@media (min-width: 768px) {
+  #menu {
+    grid-template-areas: "image image titre" "entree plat dessert" "bouton bouton bouton";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 33% 33% 34%;
+    font-size: 1.8vw;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+  }
+}
 #header_resto {
   width: 100%;
+  margin: 0;
+  grid-area: image;
 }
 
-#menu {
-  width: 100%;
-  transform: translateY(-60px);
-  border-radius: 12vw 12vw 0 0;
-  box-sizing: border-box;
-  padding: 6% 5% 3% 5%;
-  margin: 0;
-  background-color: #cecece;
+@media (min-width: 768px) {
+  #header_resto {
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+  }
 }
-#menu h4 {
-  margin: 0;
-  font-size: 1.2em;
-}
-
 #menu__titre {
   display: grid;
   grid-template-areas: "titre coeur";
   grid-template-rows: 100%;
   grid-template-columns: 6fr 1fr;
+  transform: translateY(-60px);
+  margin-bottom: -60px;
+  border-radius: 12vw 12vw 0 0;
+  background-color: #cecece;
   align-items: center;
-  font-size: 4vw;
+  font-size: 1em;
+  padding: 6% 5% 0% 5%;
+  grid-area: titre;
 }
 #menu__titre h1 {
   font-family: Shrikhand;
@@ -245,9 +352,33 @@
   grid-area: coeur;
 }
 
+@media (min-width: 768px) {
+  #menu__titre {
+    grid-template-areas: "titre" "coeur";
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    text-align: center;
+    margin-bottom: 0;
+    transform: none;
+    border-top-right-radius: 25px;
+  }
+}
+.Entre {
+  grid-area: entree;
+}
+
+.Plat {
+  grid-area: plat;
+}
+
+.Dessert {
+  grid-area: dessert;
+}
+
 .Entree, .Plat, .Dessert {
   margin-bottom: 3em;
-  font-size: 4vw;
+  font-size: 1em;
+  padding: 0% 5% 1% 5%;
 }
 .Entree h3, .Plat h3, .Dessert h3 {
   padding-left: 2.5%;
@@ -259,6 +390,21 @@
   margin-top: 0.5em;
   margin-left: 2.5%;
   border-top: 4px solid #99E2D0;
+}
+
+@media (min-width: 768px) {
+  .Entree, .Plat, .Dessert {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  .Entree .barreH, .Plat .barreH, .Dessert .barreH {
+    height: 1.5vw;
+    width: 2em;
+  }
+}
+.btn_conteneur {
+  grid-area: bouton;
+  margin-bottom: 3em;
 }
 
 #headeromf {
@@ -273,7 +419,7 @@
 }
 #headeromf .fa-arrow-left {
   grid-area: fleche;
-  font-size: 6vw;
+  font-size: 1.5em;
   margin: 0;
   padding: 0 0 0 20%;
 }
@@ -285,6 +431,11 @@
   padding: 1em 0;
 }
 
+@media (min-width: 768px) {
+  #headeromf .fa-arrow-left {
+    font-size: 3em;
+  }
+}
 footer {
   background-color: #838383;
   color: white;
@@ -309,6 +460,11 @@ footer {
   color: white;
 }
 
+@media (min-width: 768px) {
+  footer {
+    padding: 1% 6%;
+  }
+}
 .btn_gradient {
   background-image: linear-gradient(#FF79DA, #9356DC);
   border-radius: 45px;
@@ -316,16 +472,22 @@ footer {
   font-weight: bold;
   color: white;
   border: none;
-  padding: 5% 4.5%;
+  padding: 1.3rem 1.8rem;
 }
 .btn_gradient--center {
   display: flex;
   justify-content: center;
 }
 .btn_gradient--larger {
-  padding: 5% 15%;
+  padding: 1.3rem 3.5rem;
 }
 
+@media (min-width: 768px) {
+  .btn_gradient {
+    font-size: 2vw;
+    padding: 0.5rem 0.9rem;
+  }
+}
 html, body {
   font-family: roboto;
   height: 100%;
@@ -333,8 +495,24 @@ html, body {
   margin: 0;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    width: 95vw;
+    font-size: 1.2vw;
+    margin: auto;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    width: 75vw;
+    font-size: 0.8vw;
+    margin: auto;
+  }
+}
 main {
   background-color: #cecece;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
