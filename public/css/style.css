@@ -460,6 +460,11 @@ footer {
   color: white;
 }
 
+@media (min-width: 768px) {
+  footer {
+    padding: 1% 6%;
+  }
+}
 .btn_gradient {
   background-image: linear-gradient(#FF79DA, #9356DC);
   border-radius: 45px;
