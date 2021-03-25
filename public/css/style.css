@@ -250,49 +250,70 @@
 }
 .choix {
   display: grid;
-  grid-template-areas: "titre  titre" "soustitre prix";
+  grid-template-areas: "titre  titre select" "soustitre prix select";
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 12fr 1fr;
+  grid-template-columns: 12fr 1fr auto;
   grid-gap: 1%;
   justify-content: start;
   align-items: center;
   background-color: white;
-  border-radius: 5%/20%;
+  border-radius: 25px;
   box-shadow: 0.5em 0.5em 0.5em 0 #838383;
   margin-bottom: 5%;
-  padding: 4%;
   font-size: 4.2vw;
+}
+.choix:hover .selectplat {
+  width: 130px;
 }
 .choix h4 {
   font-size: 1.1em;
   margin: 0 0 1% 0;
-  padding: 0;
+  padding: 4% 0 0 6%;
   grid-area: titre;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .choix p {
   font-size: 0.9em;
   margin: 0;
-  padding: 0;
+  padding: 0 0 4% 6%;
   grid-area: soustitre;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .choix strong {
   font-size: 1em;
   margin: 0;
-  padding: 0;
+  padding: 0 6% 4% 0;
   grid-area: prix;
   justify-self: end;
+}
+
+.selectplat {
+  display: block;
+  transition: width 700ms ease-out;
+  color: white;
+  width: 0;
+  grid-area: select;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  overflow: hidden;
+  background-color: #99E2D0;
+  margin: auto auto;
+  padding: 0.5em 0em;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
   .choix {
     font-size: 1.5vw;
-    padding: 6% 4%;
   }
 }
 @media (min-width: 1024px) {
   .choix {
     font-size: 1.2vw;
-    padding: 6% 4%;
   }
 }
 #menu {
