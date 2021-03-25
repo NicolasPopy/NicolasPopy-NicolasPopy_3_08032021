@@ -18,14 +18,11 @@
 
 @media (min-width: 768px){
     #menu{
-        grid-template-areas: "image image titre"  "entree plat dessert"  "bouton bouton bouton";
-        grid-template-rows: auto auto auto;
+        grid-template-areas: "image image image" "titre titre titre"  "entree plat dessert"  "bouton bouton bouton";
+        grid-template-rows: auto auto  auto auto;
         grid-template-columns:33% 33% 34%; 
         
         font-size: 1.8vw;
-
-        border-top-right-radius: 25px;
-        border-top-left-radius: 25px;
     }
 }
 
@@ -40,8 +37,9 @@
 
 @media (min-width: 768px){
     #header_resto{
-        border-bottom-right-radius: 25px;
-        border-top-left-radius: 25px;
+
+        height:30vw;
+        object-fit: cover;
     }
 }
 
@@ -70,7 +68,7 @@
         font-size: 2.2em;
     }
 
-    .fa-heart-o{
+    .coeurstack{
         font-size: 1.9em;
         grid-area: coeur;
     }
@@ -78,14 +76,15 @@
 
 @media (min-width: 768px){
     #menu__titre{
-        grid-template-areas: "titre" "coeur";
-        grid-template-rows: auto auto;
-        grid-template-columns:auto;
+        grid-template-areas: "titre coeur";
+        grid-template-rows: auto ;
+        grid-template-columns:auto auto;
         text-align:center;
 
         margin-bottom:0;
-        transform: none;
-        border-top-right-radius: 25px;
+        padding:0;
+        border-radius: 45px 45px 0 0;
+       
 
     }
 }
@@ -124,7 +123,7 @@
 
 @media (min-width: 768px){
     .Entree, .Plat, .Dessert{
-        margin-top: 2em;
+        margin-top: 0;
         margin-bottom: 1em;
 
         .barreH{

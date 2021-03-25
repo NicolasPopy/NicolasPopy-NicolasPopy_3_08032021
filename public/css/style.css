@@ -15,7 +15,7 @@
   margin: 0;
   background-color: white;
   border-radius: 25px;
-  box-shadow: 0.5em 0.5em 0.5em 0 #838383;
+  box-shadow: 0.5em 0.5em 0.5em 0 #353535;
 }
 .restaurant figure img {
   width: 100%;
@@ -55,7 +55,7 @@
   margin: 0;
   padding: 0;
 }
-.restaurant figure figcaption i {
+.restaurant figure figcaption .coeurstack {
   grid-area: coeur;
   justify-self: center;
   font-size: 1.2em;
@@ -67,7 +67,6 @@
     width: 44%;
     height: auto;
   }
-
   .restaurant figure {
     height: 20em;
   }
@@ -75,6 +74,23 @@
     height: 16em;
   }
 }
+.coeurstack:hover .fas.fa-heart {
+  z-index: 1;
+  color: #9356DC;
+  transform: scale(1);
+}
+.coeurstack .far.fa-heart {
+  z-index: 2;
+}
+.coeurstack .fas.fa-heart {
+  z-index: 1;
+  color: transparent;
+  /* transition:color 800ms; */
+  transform: scale(0);
+  transform-origin: 50% 1.2em;
+  transition: transform 1000ms;
+}
+
 #home {
   display: grid;
   grid-template-columns: 100%;
@@ -102,7 +118,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #838383;
+  background-color: #EAEAEA;
 }
 #homerecherche i {
   display: inline;
@@ -119,7 +135,7 @@
 #homeexplore {
   grid-area: homeexplore;
   text-align: center;
-  background-color: #cecece;
+  background-color: #F6F6F6;
   font-family: Roboto;
   padding-top: 0.3rem;
   padding-bottom: 1.3rem;
@@ -166,8 +182,8 @@
   width: 90%;
   height: 6.5em;
   border-radius: 15px 15px 15px 15px;
-  box-shadow: 0.5em 0.5em 0.5em 0 #838383;
-  background-color: #cecece;
+  box-shadow: 0.5em 0.5em 0.5em 0 #353535;
+  background-color: #F6F6F6;
 }
 .homefonctionnement__btn .homefonctionnement__numero {
   transform: translateX(-45%);
@@ -199,7 +215,7 @@
 
 @media (min-width: 768px) {
   #homefonctionnement {
-    background-color: #cecece;
+    background-color: #F6F6F6;
     grid-area: homefonctionnement;
     font-size: 0.8vw;
     width: auto;
@@ -210,7 +226,7 @@
   }
 
   .homefonctionnement__btn {
-    background-color: #838383;
+    background-color: #EAEAEA;
   }
   .homefonctionnement__btn .homefonctionnement__numero {
     font-size: 1.4em;
@@ -225,7 +241,7 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: #cecece;
+  background-color: #F6F6F6;
 }
 #homerestaurants h1 {
   align-self: start;
@@ -258,7 +274,7 @@
   align-items: center;
   background-color: white;
   border-radius: 25px;
-  box-shadow: 0.5em 0.5em 0.5em 0 #838383;
+  box-shadow: 0.5em 0.5em 0.5em 0 #353535;
   margin-bottom: 5%;
   font-size: 4.2vw;
 }
@@ -329,12 +345,10 @@
 
 @media (min-width: 768px) {
   #menu {
-    grid-template-areas: "image image titre" "entree plat dessert" "bouton bouton bouton";
-    grid-template-rows: auto auto auto;
+    grid-template-areas: "image image image" "titre titre titre" "entree plat dessert" "bouton bouton bouton";
+    grid-template-rows: auto auto auto auto;
     grid-template-columns: 33% 33% 34%;
     font-size: 1.8vw;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
   }
 }
 #header_resto {
@@ -345,8 +359,8 @@
 
 @media (min-width: 768px) {
   #header_resto {
-    border-bottom-right-radius: 25px;
-    border-top-left-radius: 25px;
+    height: 30vw;
+    object-fit: cover;
   }
 }
 #menu__titre {
@@ -357,7 +371,7 @@
   transform: translateY(-60px);
   margin-bottom: -60px;
   border-radius: 12vw 12vw 0 0;
-  background-color: #cecece;
+  background-color: #F6F6F6;
   align-items: center;
   font-size: 1em;
   padding: 6% 5% 0% 5%;
@@ -368,20 +382,20 @@
   grid-area: titre;
   font-size: 2.2em;
 }
-#menu__titre .fa-heart-o {
+#menu__titre .coeurstack {
   font-size: 1.9em;
   grid-area: coeur;
 }
 
 @media (min-width: 768px) {
   #menu__titre {
-    grid-template-areas: "titre" "coeur";
-    grid-template-rows: auto auto;
-    grid-template-columns: auto;
+    grid-template-areas: "titre coeur";
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
     text-align: center;
     margin-bottom: 0;
-    transform: none;
-    border-top-right-radius: 25px;
+    padding: 0;
+    border-radius: 45px 45px 0 0;
   }
 }
 .Entre {
@@ -415,7 +429,7 @@
 
 @media (min-width: 768px) {
   .Entree, .Plat, .Dessert {
-    margin-top: 2em;
+    margin-top: 0;
     margin-bottom: 1em;
   }
   .Entree .barreH, .Plat .barreH, .Dessert .barreH {
@@ -458,7 +472,7 @@
   }
 }
 footer {
-  background-color: #838383;
+  background-color: #353535;
   color: white;
   padding: 4% 6%;
 }
@@ -487,13 +501,14 @@ footer {
   }
 }
 .btn_gradient {
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(325deg, #9356DC 0%, #FF79DA 60%);
   border-radius: 45px;
   font-size: 4vw;
   font-weight: bold;
   color: white;
   border: none;
   padding: 1.3rem 1.8rem;
+  box-shadow: 0.25em 0.25em 0.25em 0 #EAEAEA;
 }
 .btn_gradient--center {
   display: flex;
@@ -502,6 +517,10 @@ footer {
 .btn_gradient--larger {
   padding: 1.3rem 3.5rem;
 }
+.btn_gradient:hover {
+  box-shadow: 0.25em 0.25em 0.25em 0 #d1d1d1;
+  background: linear-gradient(325deg, #9356DC 0%, #FF79DA 10%);
+}
 
 @media (min-width: 768px) {
   .btn_gradient {
@@ -509,6 +528,23 @@ footer {
     padding: 0.5rem 0.9rem;
   }
 }
+.coeurstack:hover .fas.fa-heart {
+  z-index: 1;
+  color: #9356DC;
+  transform: scale(1);
+}
+.coeurstack .far.fa-heart {
+  z-index: 2;
+}
+.coeurstack .fas.fa-heart {
+  z-index: 1;
+  color: transparent;
+  /* transition:color 800ms; */
+  transform: scale(0);
+  transform-origin: 50% 1.2em;
+  transition: transform 1000ms;
+}
+
 html, body {
   font-family: roboto;
   height: 100%;
@@ -531,7 +567,7 @@ html, body {
   }
 }
 main {
-  background-color: #cecece;
+  background-color: #F6F6F6;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }

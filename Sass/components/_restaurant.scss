@@ -57,7 +57,7 @@
                 margin:0;
                 padding:0;
             }
-            i{
+            .coeurstack{
                 grid-area: coeur;
                 justify-self: center;
                 font-size: 1.2em;
@@ -72,10 +72,6 @@
         margin-bottom: 4%;
         width:44%;
         height:auto;
-    }
-
-    .restaurant{
-
         figure{
             height:20em;
             img{
@@ -83,4 +79,28 @@
             }
         }
     }
+}
+
+.coeurstack{
+    &:hover .fas.fa-heart{
+        z-index: 1;
+        color: $PrimaryColor;
+        transform:scale(1);
+    }
+
+    .far.fa-heart{
+        z-index: 2;
+    }  
+
+    .fas.fa-heart{
+        z-index: 1;
+        color: transparent;
+        /* transition:color 800ms; */
+        transform:scale(0);
+        transform-origin: 50% 1.2em;
+        transition: transform 1000ms; 
+        
+    }
+
+    
 }
