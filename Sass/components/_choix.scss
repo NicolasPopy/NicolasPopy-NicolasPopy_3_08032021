@@ -16,9 +16,9 @@
     font-size: 4.2vw;
 
 
-    &:hover .selectplat{
-        width:130px;       
-    }
+   
+
+
     h4{
         font-size: 1.1em;
         
@@ -32,7 +32,6 @@
     }
     p{
         font-size: 0.9em;
-      
         margin:0;
         padding:0 0 4% 6%;
         grid-area: soustitre;
@@ -47,25 +46,46 @@
         grid-area: prix;
         justify-self: end;
     }
+
+    &:hover .selectplat{
+        transform:scaleX(1);
+        width:6vw;
+           
+        transition: transform 100ms, width 600ms;
+    }
+   
+
+    & .check{
+        transform: rotate(180deg);
+        transition: transform 600ms ease;
+    }
+
+    &:hover .check{
+        transform: rotate(0deg);
+        transition: transform 600ms ease;
+    }
 }
 
 .selectplat{
     display:block;
-    //display:none; 
-    transition: width 700ms ease-out;
-
     color:white;   
-    width:0;
     grid-area:select;
     border-top-right-radius: 25px ;
     border-bottom-right-radius: 25px ;    
     overflow: hidden; 
-            
+   
     background-color: $ThirdColor;
     margin:auto auto;
     padding:0.5em 0em;
     text-align:center;
+
+    width:0.2vw;
+    transform:scaleX(0);
+    transition: transform 100ms, width 600ms;
+    transition-delay: 500ms,0ms;
 }
+
+
 
 @media (min-width: 768px)
 {

@@ -74,23 +74,6 @@
     height: 16em;
   }
 }
-.coeurstack:hover .fas.fa-heart {
-  z-index: 1;
-  color: #9356DC;
-  transform: scale(1);
-}
-.coeurstack .far.fa-heart {
-  z-index: 2;
-}
-.coeurstack .fas.fa-heart {
-  z-index: 1;
-  color: transparent;
-  /* transition:color 800ms; */
-  transform: scale(0);
-  transform-origin: 50% 1.2em;
-  transition: transform 1000ms;
-}
-
 #home {
   display: grid;
   grid-template-columns: 100%;
@@ -278,9 +261,6 @@
   margin-bottom: 5%;
   font-size: 4.2vw;
 }
-.choix:hover .selectplat {
-  width: 130px;
-}
 .choix h4 {
   font-size: 1.1em;
   margin: 0 0 1% 0;
@@ -306,12 +286,23 @@
   grid-area: prix;
   justify-self: end;
 }
+.choix:hover .selectplat {
+  transform: scaleX(1);
+  width: 6vw;
+  transition: transform 100ms, width 600ms;
+}
+.choix .check {
+  transform: rotate(180deg);
+  transition: transform 600ms ease;
+}
+.choix:hover .check {
+  transform: rotate(0deg);
+  transition: transform 600ms ease;
+}
 
 .selectplat {
   display: block;
-  transition: width 700ms ease-out;
   color: white;
-  width: 0;
   grid-area: select;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -320,6 +311,10 @@
   margin: auto auto;
   padding: 0.5em 0em;
   text-align: center;
+  width: 0.2vw;
+  transform: scaleX(0);
+  transition: transform 100ms, width 600ms;
+  transition-delay: 500ms, 0ms;
 }
 
 @media (min-width: 768px) {
