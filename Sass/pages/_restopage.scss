@@ -89,16 +89,30 @@
     }
 }
 
-.Entre{
+$durationanim:2000ms;
+
+.Entree{
     grid-area: entree;
+    animation:slidehaut;
+    animation-duration:$durationanim;
+    animation-fill-mode: forwards;
+    animation-delay: 0;
 }
 
 .Plat{
     grid-area: plat;
+    animation:slidehaut;
+    animation-duration:$durationanim;
+    animation-fill-mode: forwards;
+    animation-delay: 1000ms;
 }
 
 .Dessert{
     grid-area: dessert;
+    animation:slidehaut;
+    animation-duration:$durationanim;
+    animation-fill-mode: forwards;
+    animation-delay: 2000ms;
 }
 
 
@@ -106,6 +120,7 @@
     margin-bottom: 3em;
     font-size: 1em;
     padding:0% 5% 1% 5%;
+    
 
     h3{
         padding-left:2.5%;
@@ -137,4 +152,16 @@
 .btn_conteneur{
     grid-area:bouton;
     margin-bottom: 3em;
+}
+
+
+@keyframes slidehaut{
+    0%{
+        transform:translateY(50px);
+        opacity:0;
+    }
+    100%{
+        transform:translateY(0);
+        opacity:1;
+    }
 }

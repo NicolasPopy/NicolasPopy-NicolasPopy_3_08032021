@@ -394,16 +394,28 @@
     border-radius: 45px 45px 0 0;
   }
 }
-.Entre {
+.Entree {
   grid-area: entree;
+  animation: slidehaut;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+  animation-delay: 0;
 }
 
 .Plat {
   grid-area: plat;
+  animation: slidehaut;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+  animation-delay: 1000ms;
 }
 
 .Dessert {
   grid-area: dessert;
+  animation: slidehaut;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+  animation-delay: 2000ms;
 }
 
 .Entree, .Plat, .Dessert {
@@ -438,6 +450,16 @@
   margin-bottom: 3em;
 }
 
+@keyframes slidehaut {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 #headeromf {
   box-sizing: border-box;
   width: 100%;
@@ -541,6 +563,90 @@ footer {
   transition: transform 1000ms;
 }
 
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  opacity: 0.7;
+  z-index: 5;
+  animation-name: apparition;
+  animation-duration: 100ms;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.loader-icone {
+  position: relative;
+  top: 50%;
+  left: 40%;
+  width: 30%;
+  display: grid;
+  grid-template-areas: "load-1 load-2 load-3";
+  grid-template-rows: 1fr;
+  grid-gap: 4.5em;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+}
+.loader-icone .fa-utensils {
+  font-size: 10em;
+  color: white;
+  margin: 0;
+  padding: 0;
+  animation-name: turning;
+  animation-duration: 1500ms;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+}
+.loader-icone .load-1 {
+  grid-area: load-1;
+}
+.loader-icone .load-2 {
+  grid-area: load-2;
+}
+.loader-icone .load-3 {
+  grid-area: load-3;
+}
+
+@keyframes apparition {
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loading {
+  0% {
+    transform: translateX(-500px);
+  }
+  30% {
+    transform: translateX(0) rotate(360deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: translateX(500px);
+  }
+}
+@keyframes turning {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes sliding {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    /* transform:translateX(0) ;    */
+  }
+}
 html, body {
   font-family: roboto;
   height: 100%;
