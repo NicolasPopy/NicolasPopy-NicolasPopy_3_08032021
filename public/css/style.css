@@ -252,7 +252,6 @@
   grid-template-areas: "titre  titre select" "soustitre prix select";
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 12fr 1fr auto;
-  grid-gap: 1%;
   justify-content: start;
   align-items: center;
   background-color: white;
@@ -263,8 +262,9 @@
 }
 .choix h4 {
   font-size: 1.1em;
-  margin: 0 0 1% 0;
-  padding: 4% 0 0 6%;
+  border-radius: 25px;
+  margin: 0;
+  padding: 0.7em 0 0 0.9em;
   grid-area: titre;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -273,7 +273,7 @@
 .choix p {
   font-size: 0.9em;
   margin: 0;
-  padding: 0 0 4% 6%;
+  padding: 0 0 1em 1em;
   grid-area: soustitre;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -282,14 +282,15 @@
 .choix strong {
   font-size: 1em;
   margin: 0;
-  padding: 0 6% 4% 0;
+  padding: 0 1em 1em 0;
   grid-area: prix;
   justify-self: end;
 }
 .choix:hover .selectplat {
   transform: scaleX(1);
-  width: 6vw;
+  width: 5em;
   transition: transform 100ms, width 600ms;
+  transition-delay: 50ms, 0ms;
 }
 .choix .check {
   transform: rotate(180deg);
@@ -301,20 +302,20 @@
 }
 
 .selectplat {
-  display: block;
   color: white;
   grid-area: select;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   overflow: hidden;
+  box-sizing: border-box;
   background-color: #99E2D0;
-  margin: auto auto;
+  margin: 0;
   padding: 0.5em 0em;
   text-align: center;
   width: 0.2vw;
   transform: scaleX(0);
   transition: transform 100ms, width 600ms;
-  transition-delay: 500ms, 0ms;
+  transition-delay: 250ms, 0ms;
 }
 
 @media (min-width: 768px) {
