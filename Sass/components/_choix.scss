@@ -19,7 +19,7 @@ $dureewidth: 600ms;
     
     font-size: 4.2vw;
 
-    h4{
+    h4{ //titre
         font-size: 1.1em;
         border-radius: 25px;
         margin:0;
@@ -29,7 +29,7 @@ $dureewidth: 600ms;
         overflow: hidden;
         white-space:nowrap;
     }
-    p{
+    p{ //soustitre
         font-size: 0.9em;
         margin:0;
         padding:0 0 1em 1em;
@@ -38,10 +38,10 @@ $dureewidth: 600ms;
         overflow: hidden;
         white-space:nowrap;
     }
-    strong{
+    strong{ //prix
         font-size: 1em;
         margin:0;
-        padding:0 1em 1em 0;
+        padding:0 0.7em 1em 0.3em;
         grid-area: prix;
         justify-self: end;
     }

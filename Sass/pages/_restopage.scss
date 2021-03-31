@@ -89,30 +89,31 @@
     }
 }
 
-$durationanim:2000ms;
+$durationanim:800ms;
+
+.Categorie{
+    animation:slidehaut;
+    animation-duration:$durationanim;
+    animation-fill-mode: both;
+}
+
 
 .Entree{
     grid-area: entree;
-    animation:slidehaut;
-    animation-duration:$durationanim;
-    animation-fill-mode: forwards;
+   
     animation-delay: 0;
 }
 
 .Plat{
     grid-area: plat;
-    animation:slidehaut;
-    animation-duration:$durationanim;
-    animation-fill-mode: forwards;
-    animation-delay: 1000ms;
+    
+    animation-delay: 800ms;
 }
 
 .Dessert{
     grid-area: dessert;
-    animation:slidehaut;
-    animation-duration:$durationanim;
-    animation-fill-mode: forwards;
-    animation-delay: 2000ms;
+   
+    animation-delay: 1600ms;
 }
 
 
