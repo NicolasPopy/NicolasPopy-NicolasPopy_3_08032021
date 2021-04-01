@@ -45,10 +45,10 @@
 
 
 #menu__titre{
-    display:grid;
-    grid-template-areas: "titre coeur";
-    grid-template-rows: 100%;
-    grid-template-columns:6fr 1fr;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-content: center;
 
     transform: translateY(-60px);
     margin-bottom:-60px; // pour compenser le décalage vers le haut de l'arrondi au dessus de l'image
@@ -57,20 +57,18 @@
 
     align-items: center;
     font-size: 1em;
-    padding:6% 5% 0% 5%;
+    padding:3% 5% 0% 6%;
 
     grid-area: titre;
 
-
     h1{
         font-family: Shrikhand;
-        grid-area: titre;
-        font-size: 2.2em;
+        margin-right:1em;
+        font-size: 1.8em;
     }
 
-    .coeurstack{
+    .coeur{
         font-size: 1.9em;
-        grid-area: coeur;
     }
 }
 

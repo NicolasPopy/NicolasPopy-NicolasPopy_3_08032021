@@ -1,6 +1,6 @@
 .btn_gradient{
 
-    background: linear-gradient(325deg, $PrimaryColor 0%, $SecondaryColor  60%);
+    background: linear-gradient(335deg, $PrimaryColor 0%, $SecondaryColor  90%);
     
     
     border-radius: 45px;
@@ -21,7 +21,10 @@
 
     &:hover{
         box-shadow: 0.25em 0.25em 0.25em 0 darken($SixthColor,10%);
-        background:linear-gradient(325deg, $PrimaryColor 0%, $SecondaryColor  10%);
+        opacity:0.8;
+    }
+    &:focus{
+        outline:0;
     }
 
 }
