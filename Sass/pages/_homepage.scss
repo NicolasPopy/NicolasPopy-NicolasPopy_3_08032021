@@ -34,6 +34,7 @@
     flex-direction:row;
     justify-content:center;
     align-items: center;
+    border-top: 0.3em  inset  #CFCFCF;
 
     background-color:$SixthColor;
     i{
@@ -114,7 +115,7 @@
     width:90%;
     height:6.5em;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 0.5em 0.5em 0.5em 0 $FifthColor;
+    @include button-shadow;
     background-color:$FourthColor;
 
     .homefonctionnement__numero{

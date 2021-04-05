@@ -14,7 +14,7 @@
         margin:0 ;
         background-color:white;
         border-radius:25px;
-        box-shadow: 0.5em 0.5em 0.5em 0 $FifthColor;
+        @include button-shadow;
         
         img{
             width:100%;
@@ -23,8 +23,8 @@
             object-fit: cover;
         }
         .restaurant_new{
-            background-color:aqua;
-            color: rgb(45, 180, 140);
+            background-color: $ThirdColor;
+            color: rgb(0, 135, 102);
             font-family: roboto;
             font-weight: bold;
             position: absolute;

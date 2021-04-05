@@ -15,7 +15,7 @@
   margin: 0;
   background-color: white;
   border-radius: 25px;
-  box-shadow: 0.5em 0.5em 0.5em 0 #353535;
+  box-shadow: 0.5em 0.5em 0.5em 0 #EAEAEA;
 }
 .restaurant figure img {
   width: 100%;
@@ -24,8 +24,8 @@
   object-fit: cover;
 }
 .restaurant figure .restaurant_new {
-  background-color: aqua;
-  color: #2db48c;
+  background-color: #99E2D0;
+  color: #008766;
   font-family: roboto;
   font-weight: bold;
   position: absolute;
@@ -118,6 +118,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border-top: 0.3em inset #CFCFCF;
   background-color: #EAEAEA;
 }
 #homerecherche i {
@@ -182,7 +183,7 @@
   width: 90%;
   height: 6.5em;
   border-radius: 15px 15px 15px 15px;
-  box-shadow: 0.5em 0.5em 0.5em 0 #353535;
+  box-shadow: 0.5em 0.5em 0.5em 0 #EAEAEA;
   background-color: #F6F6F6;
 }
 .homefonctionnement__btn .homefonctionnement__numero {
@@ -274,7 +275,7 @@
   align-items: center;
   background-color: white;
   border-radius: 25px;
-  box-shadow: 0.5em 0.5em 0.5em 0 #353535;
+  box-shadow: 0.5em 0.5em 0.5em 0 #EAEAEA;
   margin-bottom: 5%;
   font-size: 4.2vw;
 }
