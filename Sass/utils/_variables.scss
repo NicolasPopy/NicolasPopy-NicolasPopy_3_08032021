@@ -14,11 +14,13 @@ $ThirdColor:#99E2D0;
 
 $FourthColor:  #F6F6F6;
 
-$FifthColor: #353535;
+$FifthColor: #353535; // footer
 
 $SixthColor: #EAEAEA;
 
+$SeventhColor : #979797; // ombres boutons
 
 
 
-@mixin button-shadow {   box-shadow: 0.5em 0.5em 0.5em 0 $SixthColor; }
+// Ombres des boutons
+@mixin button-shadow {   box-shadow: 0.4em 0.4em 0.4em 0 $SeventhColor; }

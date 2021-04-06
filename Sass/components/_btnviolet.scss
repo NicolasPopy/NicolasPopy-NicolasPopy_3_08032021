@@ -1,6 +1,6 @@
 .btn_gradient{
 
-    background: linear-gradient(335deg, $PrimaryColor 0%, $SecondaryColor  90%);
+    background: linear-gradient(335deg, $PrimaryColor -20%, $SecondaryColor  90%);
     
     
     border-radius: 45px;
@@ -9,7 +9,8 @@
     color:white;
     border:none;
     padding:1.3rem 1.8rem;
-    box-shadow: 0.25em 0.25em 0.25em 0 $SixthColor;
+    @include button-shadow;
+  
 
     &--center{
         display:flex;

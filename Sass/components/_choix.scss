@@ -1,4 +1,4 @@
-$delaiscale: 500ms;
+$delaiscale: 450ms;
 $dureescale: 80ms;
 
 $delaiwidth: 0s;
@@ -16,7 +16,7 @@ $dureewidth: 600ms;
     background-color: white ;
     border-radius: 25px; // 5% / 20% ;
     @include button-shadow;
-    margin-bottom: 5%;    
+    margin-bottom: 5%;  
     
     font-size: 4.2vw;
 
@@ -24,7 +24,7 @@ $dureewidth: 600ms;
         font-size: 1.1em;
         border-radius: 25px;
         margin:0;
-        padding:0.7em 0 0 0.9em;
+        padding:1em 0 0 1em;
         grid-area: titre;
         text-overflow:ellipsis;
         overflow: hidden;
@@ -50,16 +50,16 @@ $dureewidth: 600ms;
 
     &:hover .selectplat{
         transform:scaleX(1);
-        width:5em;
+        width:4em;
         transition: transform $dureescale, width $dureewidth;
-        transition-delay: $delaiscale,$delaiwidth;
+        transition-delay: 0s,0s;
         transform-origin: 50% 50%;
     }
 
     .fa-check-circle{  
         font-size:2em;
-        margin-top: 0.55em;  
-        transform: rotate(360deg);
+        margin-top: 0.7em;  
+        transform: rotate(-360deg);
         transition: transform 600ms ease;
         /* transform-origin: 1.15em 1.15em; */
     }
@@ -85,7 +85,7 @@ $dureewidth: 600ms;
     height:100%;
     transform:scaleX(0);
     transition: transform $dureescale, width $dureewidth;
-    transition-delay: 250ms,0ss;
+    transition-delay: $delaiscale,0s;
     transform-origin: 0% 50%;
 }
 

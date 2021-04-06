@@ -15,7 +15,7 @@
   margin: 0;
   background-color: white;
   border-radius: 25px;
-  box-shadow: 0.5em 0.5em 0.5em 0 #EAEAEA;
+  box-shadow: 0.4em 0.4em 0.4em 0 #979797;
 }
 .restaurant figure img {
   width: 100%;
@@ -167,7 +167,7 @@
   width: 90%;
   height: 6.5em;
   border-radius: 15px 15px 15px 15px;
-  box-shadow: 0.5em 0.5em 0.5em 0 #EAEAEA;
+  box-shadow: 0.4em 0.4em 0.4em 0 #979797;
   background-color: #F6F6F6;
 }
 .homefonctionnement__btn .homefonctionnement__numero {
@@ -258,7 +258,7 @@
   align-items: center;
   background-color: white;
   border-radius: 25px;
-  box-shadow: 0.5em 0.5em 0.5em 0 #EAEAEA;
+  box-shadow: 0.4em 0.4em 0.4em 0 #979797;
   margin-bottom: 5%;
   font-size: 4.2vw;
 }
@@ -266,7 +266,7 @@
   font-size: 1.1em;
   border-radius: 25px;
   margin: 0;
-  padding: 0.7em 0 0 0.9em;
+  padding: 1em 0 0 1em;
   grid-area: titre;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -290,15 +290,15 @@
 }
 .choix:hover .selectplat {
   transform: scaleX(1);
-  width: 5em;
+  width: 4em;
   transition: transform 80ms, width 600ms;
-  transition-delay: 500ms, 0s;
+  transition-delay: 0s, 0s;
   transform-origin: 50% 50%;
 }
 .choix .fa-check-circle {
   font-size: 2em;
-  margin-top: 0.55em;
-  transform: rotate(360deg);
+  margin-top: 0.7em;
+  transform: rotate(-360deg);
   transition: transform 600ms ease;
   /* transform-origin: 1.15em 1.15em; */
 }
@@ -320,7 +320,7 @@
   height: 100%;
   transform: scaleX(0);
   transition: transform 80ms, width 600ms;
-  transition-delay: 250ms, 0ss;
+  transition-delay: 450ms, 0s;
   transform-origin: 0% 50%;
 }
 
@@ -356,6 +356,8 @@
 #header_resto {
   width: 100%;
   margin: 0;
+  height: 80vw;
+  object-fit: cover;
   grid-area: image;
 }
 
@@ -386,6 +388,7 @@
 }
 #menu__titre .coeur {
   font-size: 1.9em;
+  padding: 0.05em;
 }
 
 @media (min-width: 768px) {
@@ -517,14 +520,14 @@ footer {
   }
 }
 .btn_gradient {
-  background: linear-gradient(335deg, #9356DC 0%, #FF79DA 90%);
+  background: linear-gradient(335deg, #9356DC -20%, #FF79DA 90%);
   border-radius: 45px;
   font-size: 4vw;
   font-weight: bold;
   color: white;
   border: none;
   padding: 1.3rem 1.8rem;
-  box-shadow: 0.25em 0.25em 0.25em 0 #EAEAEA;
+  box-shadow: 0.4em 0.4em 0.4em 0 #979797;
 }
 .btn_gradient--center {
   display: flex;
@@ -567,7 +570,7 @@ footer {
   overflow: visible;
   margin: auto;
   background-color: gray;
-  opacity: 0.95;
+  opacity: 0.96;
   z-index: 999;
   animation-name: apparition;
   animation-duration: 100ms;

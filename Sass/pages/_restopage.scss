@@ -31,6 +31,8 @@
 #header_resto{
     width: 100%;
     margin:0;
+    height:80vw;
+    object-fit: cover;
 
     grid-area: image;
 }
@@ -69,6 +71,7 @@
 
     .coeur{
         font-size: 1.9em;
+        padding:0.05em;
     }
 }
 
