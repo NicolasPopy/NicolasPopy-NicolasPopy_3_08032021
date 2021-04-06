@@ -38,7 +38,7 @@
 @media (min-width: 768px){
     #header_resto{
 
-        height:30vw;
+        height:25vw;
         object-fit: cover;
     }
 }
@@ -57,7 +57,7 @@
 
     align-items: center;
     font-size: 1em;
-    padding:3% 5% 0% 6%;
+    padding:3% 8% 5% 8%;
 
     grid-area: titre;
 
@@ -67,21 +67,18 @@
         font-size: 1.8em;
     }
 
-    .coeur{
+    .coeurdiv{
         font-size: 1.9em;
     }
 }
 
 @media (min-width: 768px){
     #menu__titre{
-        grid-template-areas: "titre coeur";
-        grid-template-rows: auto ;
-        grid-template-columns:auto auto;
-        text-align:center;
 
-        margin-bottom:0;
-        padding:0;
-        border-radius: 45px 45px 0 0;
+        justify-content:center;
+        padding:1% 5% 2% 5%;
+       
+        border-radius: 45px 45px 0 0; 
        
 
     }

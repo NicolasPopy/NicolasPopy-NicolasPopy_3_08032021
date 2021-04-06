@@ -34,9 +34,10 @@
     flex-direction:row;
     justify-content:center;
     align-items: center;
-    border-top: 0.3em  inset  #CFCFCF;
+    /* border-top: 0.3em  inset  #CFCFCF; */
 
-    background-color:$SixthColor;
+    background: $SixthColor;
+background: linear-gradient(180deg, rgba(207,207,207,1) 2%, $SixthColor 12%);
     i{
         display:inline;
     }
