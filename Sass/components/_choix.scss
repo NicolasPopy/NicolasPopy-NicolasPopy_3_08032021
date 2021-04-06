@@ -1,7 +1,7 @@
 $delaiscale: 500ms;
 $dureescale: 80ms;
 
-$delaiwidth: none;
+$delaiwidth: 0s;
 $dureewidth: 600ms;
 
 .choix{
@@ -85,7 +85,7 @@ $dureewidth: 600ms;
     height:100%;
     transform:scaleX(0);
     transition: transform $dureescale, width $dureewidth;
-    transition-delay: 250ms,none;
+    transition-delay: 250ms,0ss;
     transform-origin: 0% 50%;
 }
 

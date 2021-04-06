@@ -94,20 +94,17 @@ $durationanim:800ms;
 
 
 .Entree{
-    grid-area: entree;
-   
-    animation-delay: none;
+    grid-area: entree;   
+    animation-delay: 0s;
 }
 
 .Plat{
-    grid-area: plat;
-    
+    grid-area: plat;    
     animation-delay: 800ms;
 }
 
 .Dessert{
-    grid-area: dessert;
-   
+    grid-area: dessert;   
     animation-delay: 1600ms;
 }
 

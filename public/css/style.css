@@ -292,7 +292,7 @@
   transform: scaleX(1);
   width: 5em;
   transition: transform 80ms, width 600ms;
-  transition-delay: 500ms, none;
+  transition-delay: 500ms, 0s;
   transform-origin: 50% 50%;
 }
 .choix .fa-check-circle {
@@ -320,7 +320,7 @@
   height: 100%;
   transform: scaleX(0);
   transition: transform 80ms, width 600ms;
-  transition-delay: 250ms, none;
+  transition-delay: 250ms, 0ss;
   transform-origin: 0% 50%;
 }
 
@@ -403,7 +403,7 @@
 
 .Entree {
   grid-area: entree;
-  animation-delay: none;
+  animation-delay: 0s;
 }
 
 .Plat {
