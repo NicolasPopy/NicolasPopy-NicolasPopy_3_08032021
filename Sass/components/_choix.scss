@@ -15,7 +15,7 @@ $dureewidth: 600ms;
     align-items: center;
     background-color: white ;
     border-radius: 25px; // 5% / 20% ;
-    box-shadow: 0.5em 0.5em 0.5em 0 $FifthColor;
+    @include button-shadow;
     margin-bottom: 5%;    
     
     font-size: 4.2vw;
