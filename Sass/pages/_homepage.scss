@@ -115,7 +115,9 @@
     width:90%;
     height:6.5em;
     border-radius: 15px 15px 15px 15px;
+
     @include button-shadow;
+
     background-color:$FourthColor;
 
     .homefonctionnement__numero{
@@ -219,3 +221,7 @@
         }
     }
 }
+
+
+
+

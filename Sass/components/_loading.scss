@@ -1,0 +1,77 @@
+.loader{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow: show;
+    margin: auto;
+    
+    background-color: gray;
+    opacity:0.95;
+    z-index: 999;
+
+    animation-name:apparition;
+   
+    animation-duration: 100ms;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
+}
+
+.loader-icone{
+    position:relative;
+    top:20%;
+    left:35%;
+    width:30%;
+
+    display: grid;
+    grid-template-areas: "stack";
+    grid-template-rows: 1fr;
+    grid-gap: 4.5em;
+    grid-template-columns: auto;
+
+    justify-content:center;
+
+    .fa-stack{
+        font-size:10em;
+        color:white;
+
+        animation-name: turning ;
+
+        animation-duration: 2800ms; 
+        animation-timing-function: linear;
+        animation-fill-mode: both; 
+        animation-iteration-count: 2; 
+        transform-origin: 50% 50%;
+        grid-area: stack;
+    }
+}
+
+
+@media (min-width: 768px)
+{
+    .loader-icone{
+        top:40%;
+    }
+}
+
+@keyframes apparition{
+    100%{
+        opacity:0;
+        z-index: -1;
+    }
+}
+
+
+@keyframes turning{
+    0%{
+        transform:rotate(360deg) ;    
+    }
+
+    100%{
+        transform:rotate(0deg) ;        
+    }
+}
+
+

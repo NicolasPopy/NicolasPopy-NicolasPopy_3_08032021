@@ -1,23 +1,16 @@
-.coeurstack{
-    &:hover .fas.fa-heart{
-        z-index: 1;
-        color: $PrimaryColor;
-        transform:scale(1);
-    }
+.coeur{          
+    background: linear-gradient($PrimaryColor, $SecondaryColor);
 
-    .far.fa-heart{
-        z-index: 2;
-    }  
+    background-clip: text;
+    -webkit-text-fill-color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    
 
-    .fas.fa-heart{
-        z-index: 1;
-        color: transparent;
-        /* transition:color 800ms; */
-        transform:scale(0);
-        transform-origin: 50% 1.2em;
-        transition: transform 1000ms; 
+    &:hover{
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
         
     }
-
-    
 }
+
