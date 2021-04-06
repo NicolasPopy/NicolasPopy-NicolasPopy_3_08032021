@@ -67,7 +67,7 @@
         font-size: 1.8em;
     }
 
-    .coeurdiv{
+    .coeur{
         font-size: 1.9em;
     }
 }
@@ -96,7 +96,7 @@ $durationanim:800ms;
 .Entree{
     grid-area: entree;
    
-    animation-delay: 0;
+    animation-delay: none;
 }
 
 .Plat{

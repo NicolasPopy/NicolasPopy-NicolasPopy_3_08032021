@@ -2,9 +2,8 @@
     background: linear-gradient($PrimaryColor, $SecondaryColor);
 
     background-clip: text;
-    -webkit-text-fill-color: black;
-    background-clip: text;
     -webkit-background-clip: text;
+    color: black;
     
 
     &:hover{
