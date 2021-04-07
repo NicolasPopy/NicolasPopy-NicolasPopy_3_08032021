@@ -17,14 +17,14 @@ $dureewidth: 600ms;
     border-radius: 25px; // 5% / 20% ;
     @include button-shadow;
     margin-bottom: 5%;  
-    
+    padding-left: 0.7em;
     font-size: 4.2vw;
 
-    h4{ //titre
+    h3{ //titre
         font-size: 1.1em;
-        border-radius: 25px;
+        
         margin:0;
-        padding:1em 0 0 1em;
+        padding:1em 0 0 0;
         grid-area: titre;
         text-overflow:ellipsis;
         overflow: hidden;
@@ -33,7 +33,7 @@ $dureewidth: 600ms;
     p{ //soustitre
         font-size: 0.9em;
         margin:0;
-        padding:0 0 1em 1em;
+        padding:0 0 1em 0;
         grid-area: soustitre;
         text-overflow:ellipsis;
         overflow: hidden;

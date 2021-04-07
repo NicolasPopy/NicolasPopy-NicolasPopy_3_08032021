@@ -1,8 +1,8 @@
 .coeur{          
     background: linear-gradient($PrimaryColor, $SecondaryColor);
-
-    background-clip: text;
+   
     -webkit-background-clip: text;
+    background-clip: text;
     color: black;
     
 

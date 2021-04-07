@@ -282,7 +282,7 @@ html, body, main {
   background-color: #cecece;
 }
 
-#menu h4 {
+#menu h3 {
   margin: 0;
   font-size: 1.2em;
 }
@@ -421,7 +421,7 @@ footer {
   font-size: 4.8vw;
 }
 
-.choix h4 {
+.choix h3 {
   font-size: 1.1em;
   margin: 0;
   padding: 0;

@@ -260,13 +260,13 @@
   border-radius: 25px;
   box-shadow: 0.4em 0.4em 0.4em 0 #979797;
   margin-bottom: 5%;
+  padding-left: 0.7em;
   font-size: 4.2vw;
 }
-.choix h4 {
+.choix h3 {
   font-size: 1.1em;
-  border-radius: 25px;
   margin: 0;
-  padding: 1em 0 0 1em;
+  padding: 1em 0 0 0;
   grid-area: titre;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -275,7 +275,7 @@
 .choix p {
   font-size: 0.9em;
   margin: 0;
-  padding: 0 0 1em 1em;
+  padding: 0 0 1em 0;
   grid-area: soustitre;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -424,7 +424,7 @@
   font-size: 1em;
   padding: 0% 5% 1% 5%;
 }
-.Entree h3, .Plat h3, .Dessert h3 {
+.Entree h2, .Plat h2, .Dessert h2 {
   padding-left: 2.5%;
   margin: 0;
 }
@@ -552,8 +552,8 @@ footer {
 }
 .coeur {
   background: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   color: black;
 }
 .coeur:hover {
