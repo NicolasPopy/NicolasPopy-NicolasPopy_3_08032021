@@ -23,6 +23,7 @@
     &:hover{
         box-shadow: 0.25em 0.25em 0.25em 0 darken($SixthColor,10%);
         opacity:0.8;
+        cursor: pointer;
     }
     &:focus{
         outline:0;

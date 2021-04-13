@@ -1,5 +1,6 @@
-$delaiscale: 450ms;
-$dureescale: 80ms;
+$delaiscaleup: 0ms;
+$delaiscaledown: 590ms;
+$dureescale: 10ms;
 
 $delaiwidth: 0s;
 $dureewidth: 600ms;
@@ -52,7 +53,7 @@ $dureewidth: 600ms;
         transform:scaleX(1);
         width:4em;
         transition: transform $dureescale, width $dureewidth;
-        transition-delay: 0s,0s;
+        transition-delay: $delaiscaleup,$delaiwidth;
         transform-origin: 50% 50%;
     }
 
@@ -85,8 +86,8 @@ $dureewidth: 600ms;
     height:100%;
     transform:scaleX(0);
     transition: transform $dureescale, width $dureewidth;
-    transition-delay: $delaiscale,0s;
-    transform-origin: 0% 50%;
+    transition-delay: $delaiscaledown,$delaiwidth;
+    transform-origin: 50% 50%;
 }
 
 

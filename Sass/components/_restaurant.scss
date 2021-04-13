@@ -17,10 +17,12 @@
         @include button-shadow;
         
         img{
+            display:block;
             width:100%;
             height:11rem;
             border-radius:25px 25px 0 0;
             object-fit: cover;
+
         }
         .restaurant_new{
             background-color: $ThirdColor;
@@ -34,32 +36,42 @@
             border-radius: 5px;
         }
         figcaption{
-            padding:1% 0 0 5%;
+            padding:0 0 0 5%;
             margin:0;
             display: grid;
-            grid-template-columns: 1.5fr 0.5fr;
+            grid-template-columns: 1.7fr 0.3fr;
             grid-template-rows: 1fr 1fr;
             gap: 0px 0px;
+            height: 4rem;
+
 
             grid-template-areas:
             "titre coeur"
             "soustitre coeur";
             justify-items:start;
             align-items: center;
-            h3{
+            h2{
                 margin:0;
                 padding:0;
                 grid-area: titre;
+                font-size: 1.1em;
+                align-self:end;
+
             }
             p{
                 grid-area: soustitre;
                 margin:0;
                 padding:0;
+                font-size: 0.9em;
+                align-self:start;
+                
             }
             .coeur{
                 grid-area: coeur;
-                justify-self: center;
+                justify-self: top;
+                align-self: top;
                 font-size: 1.8em;
+            
             }
         }
     }    
@@ -75,6 +87,9 @@
             height:20em;
             img{
                 height:16em;
+            }
+            figcaption{
+                height: 4em;
             }
         }
     }

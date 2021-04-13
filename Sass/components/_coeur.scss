@@ -4,11 +4,11 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: black;
-    
 
     &:hover{
         -webkit-text-fill-color: transparent;
         font-weight: bold;
+        cursor: pointer;
         
     }
 }
