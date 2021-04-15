@@ -1,9 +1,9 @@
 $delaiscaleup: 0ms;
-$delaiscaledown: 590ms;
+$delaiscaledown: 300ms;
 $dureescale: 10ms;
 
 $delaiwidth: 0s;
-$dureewidth: 600ms;
+$dureewidth: 450ms;
 
 .choix{
 
@@ -50,7 +50,7 @@ $dureewidth: 600ms;
 
 
     &:hover .selectplat{
-        transform:scaleX(1);
+        transform:scale(1);
         width:4em;
         transition: transform $dureescale, width $dureewidth;
         transition-delay: $delaiscaleup,$delaiwidth;
@@ -84,7 +84,7 @@ $dureewidth: 600ms;
     text-align: center;
     width:0.2vw;
     height:100%;
-    transform:scaleX(0);
+    transform:scale(0);
     transition: transform $dureescale, width $dureewidth;
     transition-delay: $delaiscaledown,$delaiwidth;
     transform-origin: 50% 50%;

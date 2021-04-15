@@ -63,8 +63,7 @@
 }
 .restaurant figure figcaption .coeur {
   grid-area: coeur;
-  justify-self: top;
-  align-self: top;
+  align-self: center;
   font-size: 1.8em;
 }
 
@@ -299,9 +298,9 @@
   justify-self: end;
 }
 .choix:hover .selectplat {
-  transform: scaleX(1);
+  transform: scale(1);
   width: 4em;
-  transition: transform 10ms, width 600ms;
+  transition: transform 10ms, width 450ms;
   transition-delay: 0ms, 0s;
   transform-origin: 50% 50%;
 }
@@ -328,9 +327,9 @@
   text-align: center;
   width: 0.2vw;
   height: 100%;
-  transform: scaleX(0);
-  transition: transform 10ms, width 600ms;
-  transition-delay: 590ms, 0s;
+  transform: scale(0);
+  transition: transform 10ms, width 450ms;
+  transition-delay: 300ms, 0s;
   transform-origin: 50% 50%;
 }
 
