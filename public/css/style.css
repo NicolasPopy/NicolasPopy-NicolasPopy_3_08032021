@@ -563,7 +563,6 @@ footer {
 .coeur {
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
-  background-clip: text;
   color: black;
 }
 .coeur:hover {
@@ -639,14 +638,7 @@ html, body {
   margin: 0;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  body {
-    width: 95vw;
-    font-size: 1.2vw;
-    margin: auto;
-  }
-}
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   body {
     width: 75vw;
     font-size: 0.8vw;
